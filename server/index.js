@@ -3,19 +3,19 @@ var WebSocket = require('ws')
 var http = require('http');
 var ShareDB = require('sharedb')
 var WebSocketJSONStream = require('@teamwork/websocket-json-stream')
-
-var backend = new ShareDB();
+const db = require('sharedb-mongo')('mongodb://localhost:27017', {mongoOptions: { useUnifiedTopology: true}});
+const backend = new ShareDB({db});
 createDoc(startServer);
 
 // Create initial document then fire callback
 function createDoc(callback) {
     var connection = backend.connect();
-    var doc = connection.get('examples', 'counter');
+    var doc = connection.get('examples', 'counting');
     doc.fetch(function(err) {
         if (err) throw err;
         if (doc.type === null) {
             console.log("creating document")
-            doc.create({numClicks: 0}, callback);
+            doc.create({count: 0}, callback);
             return;
         }
         callback();
