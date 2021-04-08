@@ -6,6 +6,8 @@ import React from 'react'
 
 const EXPRESS_PORT = process.env.REACT_APP_EXPRESS_PORT || 8000;
 
+const EXPRESS_HOST = process.env.REACT_APP_EXPRESS_HOST || "localhost"
+
 function App() {
 
     let [dbConnection, setDbConnection] = React.useState(null)
@@ -22,7 +24,7 @@ function App() {
     React.useEffect(() => {
         console.log("Load webhook")
         // Open WebSocket connection to ShareDB server
-        let socket = new ReconnectingWebSocket(`ws://localhost:${EXPRESS_PORT}`);
+        let socket = new ReconnectingWebSocket(`ws://${EXPRESS_HOST}:${EXPRESS_PORT}`);
         let connection = new ShareDb.Connection(socket);
         setDbConnection(connection)
         // Create local Doc instance mapped to 'examples' collection document with id 'counter'
