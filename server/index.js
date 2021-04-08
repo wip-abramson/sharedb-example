@@ -2,8 +2,14 @@ var express = require('express')
 var WebSocket = require('ws')
 var http = require('http');
 var ShareDB = require('sharedb')
+var path = require("path")
 var WebSocketJSONStream = require('@teamwork/websocket-json-stream')
-const db = require('sharedb-mongo')('mongodb://localhost:27017', {mongoOptions: { useUnifiedTopology: true}});
+require('dotenv').config();
+
+const PORT = process.env.EXPRESS_PORT || 8000;
+const DB_PORT = process.env.DB_PORT || 27017
+
+const db = require('sharedb-mongo')(`mongodb://localhost:${DB_PORT}`, {mongoOptions: { useUnifiedTopology: true}});
 const backend = new ShareDB({db});
 createDoc(startServer);
 
@@ -25,8 +31,11 @@ function createDoc(callback) {
 function startServer() {
     // Create a web server to serve files and listen to WebSocket connections
     var app = express();
+    app.use(express.static(path.join(__dirname, "..", "client", "build")));
     app.use(express.static('static'));
     var server = http.createServer(app);
+
+
 
     // Connect any incoming WebSocket connection to ShareDB
     var wss = new WebSocket.Server({server: server});
@@ -35,6 +44,6 @@ function startServer() {
         backend.listen(stream);
     });
 
-    server.listen(8080);
-    console.log('Listening on http://localhost:8080');
+    server.listen(PORT);
+    console.log('Listening on http://localhost:' + PORT);
 }
