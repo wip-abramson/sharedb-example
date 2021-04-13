@@ -14,10 +14,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@digitalbazaar/ezcap-express": "^3.0.1",
     "@teamwork/websocket-json-stream": "^2.0.0",
+    "did-io": "^0.8.3",
+    "did-method-key": "^0.7.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "http": "^0.0.1-security",
+    "jsonld-document-loader": "^1.1.0",
     "sharedb": "^1.7.1",
     "sharedb-mongo": "^1.0.0-beta.17",
     "ws": "^7.4.4"
