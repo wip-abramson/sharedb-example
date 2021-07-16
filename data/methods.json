@@ -1,0 +1,13 @@
+[{
+  "id" : "https://w.rubric.cc/methods/1",
+  "label": "did:v1.testnet",
+  "name": "Veres One testnet",
+  "specificationUrl": "https://w3c-ccg.github.io/did-method-v1/",
+  "networkUrl":"https://veres.one/network/",
+  "registry":"Same as network"
+},{
+  "id": "https://w.rubric.cc/methods/2",
+  "label": "did:v1.production",
+  "name": "Veres One Production",
+  "alternate": "Future version of did:v1. Once Veres One goes into production, governance will be handed off to the Veres Foundation and the Veres Community Group (a W3C community group). These are forward looking statements for pro-forma evaluation of intended deployment."
+}]

@@ -1,0 +1,11 @@
+[{
+  "id":"https://w.rubric.cc/evaluators/1",
+  "type":"evaluator",
+  "name":"Joe Andrieu",
+  "email":"joe@legreq.com"
+  },{
+  "id": "https://w.rubric.cc/evaluators/2",
+  "type": "evaluator",
+  "name": "Eric Schuh",
+  "email": "eric@legreq.com"
+}]

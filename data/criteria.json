@@ -1,0 +1,1833 @@
+[{
+  "id": "https://w.rubric.cc/criteria/1",
+  "tags" : ["Rulemaking"],
+  "name": "Open contribution (participation)",
+  "question": "How open is participation in governance decisions?",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Anyone can participate in an open, fair process where all participants have equal opportunity to be heard and influence decisions."
+      },
+      {
+        "label": "B",
+        "meaning": "Anyone can comment and contribute to open debate, but decisions are ultimately made by a closed group."
+      },
+      {
+        "label": "C",
+        "meaning": "Debate is restricted to a selected but known group."
+      },
+      {
+        "label": "D",
+        "meaning": "Debate is conducted in secret by an unknown group."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Governance determines how the rules of the underlying network are set and maintained. The more parties that are able to contribute to governance debates, the more decentralized the governance",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "§2.1.1",
+    "sectionRef": "#open-contribution-participation"
+  }
+},{
+  "id": "https://w.rubric.cc/criteria/2",
+  "question": "How visible are rule making processes?",
+  "name": "Transparency",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Agendas and participation details for all meetings are publicly announced, the meetings are broadcast in real-time to any listeners, and all minutes and recordings are captured in realtime and publicly reviewable in perpetuity."
+      },
+      {
+        "label": "B",
+        "meaning": "Minutes of meetings are reviewable by the public, including all votes and who cast them, but real-time observation may be limited."
+      },
+      {
+        "label": "C",
+        "meaning": "All current rules are publicly available."
+      },
+      {
+        "label": "D",
+        "meaning": "Rules may be changed without public notice."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "While participation measures active contribution, transparency measures the visibility of discussions affecting rule making. If such discussions are only visible to a limited group, it centralizes decision making in ways that Evaluators and users cannot easily see.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "§2.1.2",
+    "sectionRef": "#transparency"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/3",
+  "question": "What cryptocurrency, if any, is required for Method operations?",
+  "name": "Cryptocurrency",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": ""
+      },
+      {
+        "label": "B",
+        "meaning": "[List of currencies]"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The use of particular cryptocurrencies create a long term dependency on the viability of those currencies. Such dependency may be a deterrent for some applications. Similarly, if no cryptocurrency is used, there is likely a dependency elsewhere, such as on the organization managing consensus rules and operation.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/4",
+  "question": "Does one need permission to use the DID Method?",
+  "name": "Permissioned Operation",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Anyone can participate fully (full read/write and participation in consensus)."
+      },
+      {
+        "label": "B",
+        "meaning": "Anyone can read/write, but consensus mechanism is permissioned."
+      },
+      {
+        "label": "C",
+        "meaning": "Anyone can read, but writing and consensus is permissioned."
+      },
+      {
+        "label": "D",
+        "meaning": "All participation is permissioned."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Permissioned operation impacts the availability of the network to various participants, which can affect inclusivity with regard to underserved or vulnerable populations. Permissioned networks also expose the permission giver to legal or other attacks.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.1.1",
+    "sectionRef": "#permissioned-operation"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/5",
+  "question": "Does the DID Method restrict access or functionality to particular wallet implementations per the specification?",
+  "name": "Interoperability",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Any wallet can work with any resolver on any registry."
+      },
+      {
+        "label": "B",
+        "meaning": "Any wallet can work with multiple resolvers and multiple registries."
+      },
+      {
+        "label": "C",
+        "meaning": "Some implementations of some wallets can work with some resolvers."
+      },
+      {
+        "label": "D",
+        "meaning": "There is a single combined suite of resolver, registry, and wallet."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The ability to communicate with different (ideally all) resolvers and registries significantly increases the applicability of a decentralized identity layer / usability of a given wallet. Vice versa, limited capability to work with other Methods and registries restrict usage.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.2.3",
+    "sectionRef": "#interoperability"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/6",
+  "question": "How widely can DIDs of this Method be used?",
+  "name": "Scope of Usage",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Universal: DIDs can only be created and used universally, between any number of parties."
+      },
+      {
+        "label": "B",
+        "meaning": "Contextual: DIDs can be created and used contextually, between any set of collaborating parties."
+      },
+      {
+        "label": "C",
+        "meaning": "Paired: DID can be created and used pairwise, between any two parties."
+      },
+      {
+        "label": "D",
+        "meaning": "Central: DIDs can only be created and used with a single, centralized party."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Different Methods enable different scopes in which a DID might be considered usable or valid. Some DIDs are only resolvable within a limited context, others are suitable for global use. Contextual DIDs are a middle ground that allow a set of parties to use DIDs, while those outside that group cannot meaningfully do so. Finally, central DIDs use the DID syntax and DID Documents to establish secure communications, but authority to use these DIDs resides with the central party, who may revoke that ability at their discretion.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.2.6",
+    "sectionRef": "#scope-of-usage"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/7",
+  "question": "Does the Method require network communications to create a DID?",
+  "name": "Off-ledger creation",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "No. Creation is entirely off-line. Only updates and deactivations require network or registry interaction"
+      },
+      {
+        "label": "B",
+        "meaning": "Yes. Creation requires network communication with a single party, but not consensus "
+      },
+      {
+        "label": "C",
+        "meaning": "Yes. Creation requires network coordination with multiple parties in a constrained group"
+      },
+      {
+        "label": "D",
+        "meaning": "Yes. Creation requires global consensus"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Communication is costly, with increasing costs the more parties are involved. This cost is not just in terms of the connection expense, but also the latency in processing transactions. The ability to create a DID without registering it on a global shared state greatly reduces the technical and financial cost of the method.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/8",
+  "question": "Assuming an average of no more than 1 update per quarter, how many DIDs can this method support?",
+  "name": "Update Scalability",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Greater than 5 billion"
+      },
+      {
+        "label": "B",
+        "meaning": "Greater than 1 billion"
+      },
+      {
+        "label": "C",
+        "meaning": "Greater than 500 million"
+      },
+      {
+        "label": "D",
+        "meaning": "Greater than 50 million"
+      },
+      {
+        "label": "E",
+        "meaning": "Greater than 5 million"
+      },
+      {
+        "label": "F",
+        "meaning": "Less than 5 million"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Some DID methods may be able to support the world's population, others may be more suitable to a particular type of use where only a small number of DIDs need to be supported. This gives a rough idea of the population base you may expect a particular DID method to support. ",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/9",
+  "question": "How much does it cost a DID creator to create a DID?",
+  "name": "Creation Cost",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Only operational costs of running the algorithm (no externalized expense)"
+      },
+      {
+        "label": "B",
+        "meaning": "Less than $0.01"
+      },
+      {
+        "label": "C",
+        "meaning": "Less than $0.10"
+      },
+      {
+        "label": "D",
+        "meaning": "Less than $1"
+      },
+      {
+        "label": "E",
+        "meaning": "Less than $10"
+      },
+      {
+        "label": "F",
+        "meaning": "$10 or greater"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Almost all operations are sensitive to the cost of creating the underlying identifiers. If such costs are close to zero, broad use of ephemeral keys is possible. As costs increase, it becomes more and more necessary to limit the number of identifiers created in order to keep systems.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/10",
+  "question": "How much does it cost, out of pocket, to update or deactivate a DID Document?",
+  "name": "Update & Deletion Cost (Out-of-pocket)",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Update & Deletion Cost (Out-of-pocket)"
+      },
+      {
+        "label": "B",
+        "meaning": "Less than $0.01"
+      },
+      {
+        "label": "C",
+        "meaning": "Less than $0.10"
+      },
+      {
+        "label": "D",
+        "meaning": "Less than $1"
+      },
+      {
+        "label": "E",
+        "meaning": "Less than $10"
+      },
+      {
+        "label": "F",
+        "meaning": "$10 or greater"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Depending on the method and governance, the price of updating and deleting a DID Document will inform the cost of doing business with the particular method. Depending on the use case in mind this can be used, along with the scalability questions, to estimate the cost of maintaining a network using this DID method. ",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/11",
+  "question": "How much does it cost to update or deactivate a DID Document using in-kind contributions?",
+  "name": "Update & Deletion Cost (in-kind)",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Update & Deletion Cost (Out-of-pocket)"
+      },
+      {
+        "label": "B",
+        "meaning": "Less than $0.01"
+      },
+      {
+        "label": "C",
+        "meaning": "Less than $0.10"
+      },
+      {
+        "label": "D",
+        "meaning": "Less than $1"
+      },
+      {
+        "label": "E",
+        "meaning": "Less than $10"
+      },
+      {
+        "label": "F",
+        "meaning": "$10 or greater"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Depending on the method and governance, there may be ways of reducing (or removing) the cost of Updating or Deleting a DID Document, such as volunteering with the governance body or doing a set of work the network needs done. ",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/12",
+  "question": "How transparent are the economics of the Method?",
+  "name": "Financial accountability",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "All operational finances are transparent and accounted for."
+      },
+      {
+        "label": "B",
+        "meaning": "Compensation for primary operators is transparent."
+      },
+      {
+        "label": "C",
+        "meaning": "Some financial flows are visible."
+      },
+      {
+        "label": "D",
+        "meaning": "Operation is privatized with no visibility."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Similar to Governance criterion #3, financial accountability reflects the integrity and sustainability of the DID registry. The more open, transparent, and accountable the system, the greater the confidence a DID controller may have that it will remain stable and operational, and therefore continue to provide service.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.2.2",
+    "sectionRef": "#financial-accountability"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/13",
+  "question": "How many DIDs of this method can be created per time period, globally?",
+  "name": "Transactional Performance - Global Create Bandwidth",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "More than 1,000,000 Transactions Per Second"
+      },
+      {
+        "label": "B",
+        "meaning": "100,001 - 1,000,000 TPS"
+      },
+      {
+        "label": "C",
+        "meaning": "10,001 - 100,000 TPS"
+      },
+      {
+        "label": "D",
+        "meaning": "1,001 - 10,000 TPS"
+      },
+      {
+        "label": "E",
+        "meaning": "101 - 1,000 TPS"
+      },
+      {
+        "label": "F",
+        "meaning": "11 - 100 TPS"
+      },
+      {
+        "label": "G",
+        "meaning": "1-10 TPS"
+      },
+      {
+        "label": "H",
+        "meaning": "Less than 1 TPS"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The number of new DIDs that can be created in a second inform the scalability of the network in regards to onboarding new users and allowing for new uses by existing users.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/14",
+  "question": "How many DIDs can be updated per unit time?",
+  "name": "Transactional Performance -- Update",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "More than 1,000,000 Transactions Per Second"
+      },
+      {
+        "label": "B",
+        "meaning": "10,001 - 1,000,000 TPS"
+      },
+      {
+        "label": "C",
+        "meaning": "101 - 10,000 TPS"
+      },
+      {
+        "label": "D",
+        "meaning": "11 - 100 TPS"
+      },
+      {
+        "label": "E",
+        "meaning": "1-10 TPS"
+      },
+      {
+        "label": "F",
+        "meaning": "Less than 1 TPS"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Along with creation, update performance of the registry can inform as to how many users make use of the Method at any given time.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/15",
+  "question": "How long does it take until updates are authoritatively final?",
+  "name": "Update Latency",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Less than 1 second"
+      },
+      {
+        "label": "B",
+        "meaning": "1 to < 60 seconds"
+      },
+      {
+        "label": "C",
+        "meaning": "1 to < 10 min"
+      },
+      {
+        "label": "D",
+        "meaning": "10 min to < 1 hour"
+      },
+      {
+        "label": "E",
+        "meaning": "1 hour to < 1 day"
+      },
+      {
+        "label": "F",
+        "meaning": "1 day to 2 weeks"
+      },
+      {
+        "label": "G",
+        "meaning": "Greater than two weeks"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Different registry mechanisms have different guarantees for some notion of finality. The longer one has to wait for confirmation, the greater the latency for high security transactions. The shorter the duration, the more one has to critically validate the race conditions that may be present in determining finality. Depending on the algorithm, there are likely trade-offs between the stability of consensus and the speed at which consensus is pursued.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/16",
+  "question": "Who can retrieve cryptographic proof of the history of changes to a given DID Document?",
+  "name": "Auditability",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Anyone"
+      },
+      {
+        "label": "B",
+        "meaning": "Only a select group, including parties not involved in a given DID transaction"
+      },
+      {
+        "label": "C",
+        "meaning": "Only parties to the transaction"
+      },
+      {
+        "label": "D",
+        "meaning": "Not available"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Trustlessness is a prerequisite of a decentralized system. If you have to trust the source of a DID Document (i.e., if you can’t verify cryptographically a DID Document that is returned from resolution), then you are at the mercy of a potentially centralized authority. If, instead you have a cryptographic audit trail, then the current state of a DID cannot be compromised by an intermediary or central party.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.2.7",
+    "sectionRef": "#auditability"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/17",
+  "question": "How can one prove control over DIDs of the Method?",
+  "name": "Proof of Control",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Cryptographic challenge string & signed response"
+      },
+      {
+        "label": "B",
+        "meaning": "Authenticator App"
+      },
+      {
+        "label": "C",
+        "meaning": "Biometrics"
+      },
+      {
+        "label": "D",
+        "meaning": "Email"
+      },
+      {
+        "label": "E",
+        "meaning": "DNS Record"
+      },
+      {
+        "label": "F",
+        "meaning": "HTML over HTTP"
+      },
+      {
+        "label": "G",
+        "meaning": "SMS/MMS"
+      },
+      {
+        "label": "H",
+        "meaning": "DID Document update"
+      },
+      {
+        "label": "I",
+        "meaning": "Other"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The ability to change a DID Document implies the permission to do so. How is this permission determined? Cryptographic proof of control is typical for crypto-currency-based Methods, but other means may be employed.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/18",
+  "question": "How many independent legal entities determine consensus?",
+  "name": "Operational Diversity",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Open ended. Currently estimated at greater than 1 million"
+      },
+      {
+        "label": "B",
+        "meaning": "Over 100,000"
+      },
+      {
+        "label": "C",
+        "meaning": "Over 10,000"
+      },
+      {
+        "label": "D",
+        "meaning": "Over 1,000"
+      },
+      {
+        "label": "D",
+        "meaning": "Over 100"
+      },
+      {
+        "label": "D",
+        "meaning": "Over 10"
+      },
+      {
+        "label": "D",
+        "meaning": "Less than 10"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Singular--or small numbers of--entities controlling the consensus of a network can orchestrate malicious attacks.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/19",
+  "question": "What type of consensus mechanism is used by the method registry?",
+  "name": "Registry Consensus",
+  "response": {
+    "type": "multipleChoice",
+    "note": "For registries which use a hybrid of any of the above approaches, select the one that is the closest fit then either denote via parenthesis‒e.g. C(A) for a hybrid BFT algorithm that utilizes POW at some layer‒and describe in the notes at a high level how the consensus algorithm functions. ",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Proof of Work"
+      },
+      {
+        "label": "B",
+        "meaning": "Proof of Stake"
+      },
+      {
+        "label": "C",
+        "meaning": "BFT algorithm based"
+      },
+      {
+        "label": "D",
+        "meaning": "Electoral - Select parties vote with thresholds"
+      },
+      {
+        "label": "E",
+        "meaning": "Unanimous - All parties countersign"
+      },
+      {
+        "label": "F",
+        "meaning": "Unilateral - Latest signed version defined as authentic"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The consensus mechanism used by the method registry has implications for scalability, speed of operations, security and possibly environmental impact.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/20",
+  "question": "If the Method is based on a cryptocurrency, did that currency have an Initial Coin Offering or other public funding mechanism?",
+  "name": "Public Funding",
+  "response": {
+    "type": "multipleChoice",
+    "note": "If the method is not based on a cryptocurrency, respond with \"n/a\"",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "No."
+      },
+      {
+        "label": "B",
+        "meaning": "Yes"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Public funding can create financial entanglements. Those methods that depend on outside financing should be further evaluated to understand the potential consequences of funding to-date.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/21",
+  "question": "How long has the organization(s) behind the Method been operational?",
+  "name": "Organizational Maturity in Time",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Over 20 years"
+      },
+      {
+        "label": "B",
+        "meaning": "Over 10 years"
+      },
+      {
+        "label": "C",
+        "meaning": "Over 5 years"
+      },
+      {
+        "label": "D",
+        "meaning": "Over 1 year"
+      },
+      {
+        "label": "E",
+        "meaning": "Less than 1 year"
+      },
+      {
+        "label": "F",
+        "meaning": "There is no organization per se"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "The age of the organization(s) behind a Method can be used to give an idea into organizational maturity. It is not a sole indicator and should be taken as a data point in evaluating the Method organization’s current state.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/22",
+  "question": "How rigorously tested is the proposed consensus implementation?",
+  "name": "Test Coverage",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Continuous integration tests evaluate all known failure modes across multiple nodes."
+      },
+      {
+        "label": "B",
+        "meaning": "Nightly automated tests evaluate failure modes on a single node"
+      },
+      {
+        "label": "C",
+        "meaning": "Occasional automated tests are run and results published"
+      },
+      {
+        "label": "D",
+        "meaning": "Human-mediated tests have been run, and the result published"
+      },
+      {
+        "label": "E",
+        "meaning": "Testing is performed by evaluating the system in production"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Robust testing helps ensure that the method has been thoroughly vetted against issues. Both malicious attacks or internal code errors could cause problems which should be found through testing and not in a live system. ",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/23",
+  "question": "Is the registry in general release?",
+  "name": "Release Status",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Yes. A production system is available to the general population."
+      },
+      {
+        "label": "B",
+        "meaning": "No. A test network is operational."
+      },
+      {
+        "label": "C",
+        "meaning": "No. Only an internal developer network is operational."
+      },
+      {
+        "label": "D",
+        "meaning": "No. The software is not yet running on any network."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Some errors only become apparent after sufficient time to test edge cases and performance boundaries.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/24",
+  "question": "How long has the underlying spec/network/registry been available to third parties for non-trivial use?",
+  "name": "Maturity",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "The spec/network/registry has been operationalized for ten years or more."
+      },
+      {
+        "label": "B",
+        "meaning": "The spec/network/registry has been operationalized for five years or more."
+      },
+      {
+        "label": "C",
+        "meaning": "The spec/network/registry has been operationalized for one year or more."
+      },
+      {
+        "label": "D",
+        "meaning": "The spec/network/registry has been operationalized for less than one year."
+      },
+      {
+        "label": "E",
+        "meaning": "The spec/network/registry is not operationalized for non-trivial use."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Some errors only become apparent after sufficient time to test edge cases and performance boundaries.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/25",
+  "question": "Does the system use cryptographic and security primitives that are well vetted by technical experts, and battle hardened in the school of experience?",
+  "name": "Expert Review (Cryptography)",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Experts generally consider the system very secure, and this opinion is reinforced by a track record of secure production use."
+      },
+      {
+        "label": "B",
+        "meaning": "The theoretical security of the system looks excellent, and no known attacks or substantive criticisms are unaddressed. However, limited review or limited experience informs the opinion."
+      },
+      {
+        "label": "C",
+        "meaning": "Credible reports of vulnerabilities or design shortcomings have not been addressed."
+      },
+      {
+        "label": "D",
+        "meaning": "The system actively uses mechanisms that are officially deprecated."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Exotic crypto and other security mechanisms without expert review and a production track record is likely to contain hidden risks.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.2",
+    "sectionRef": "#expert-review"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/26",
+  "question": "Has the registry’s consensus mechanism undergone sufficient review?",
+  "name": "Expert Review (Consensus)",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Yes. A formal proof has been published in a peer reviewed journal."
+      },
+      {
+        "label": "B",
+        "meaning": "Yes. A formal proof has been published."
+      },
+      {
+        "label": "C",
+        "meaning": "No. An informal argument has been published."
+      },
+      {
+        "label": "D",
+        "meaning": "No. The consensus algorithm is opaque to registry users."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Decentralized systems are notoriously difficult to get right. Consensus ordering, in particular, is known to be a hard problem solved by distributed ledgers. Even simpler registries may trade off provable finality with probabilistic finality. It is vital that the Method used for high-value or life-critical application be rigorously evaluated for potential flaws.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/27",
+  "question": "How friendly is the system to adopting post-quantum crypto, larger hashes, or other measures that upgrade its security?",
+  "name": "Future Proofing",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Any user of the system can easily upgrade their crypto at any time."
+      },
+      {
+        "label": "B",
+        "meaning": "No code changes are needed, but the whole system needs to be reconfigured to allow new crypto."
+      },
+      {
+        "label": "C",
+        "meaning": "Code changes must be implemented before new crypto is possible."
+      },
+      {
+        "label": "D",
+        "meaning": "Code changes must be implemented, and migration of all existing data must be performed, before new crypto is possible."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "A DID method that is hard to upgrade with respect to crypto creates incentives to remain with deprecated algorithms beyond their useful lifespan.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.3",
+    "sectionRef": "#future-proofing"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/28",
+  "question": "How robust are protections against attempts to suppress information flow, whether legal (cease and desist) or technical (denial of service)?",
+  "name": "Availability",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "The VDR is practically immune from this risk."
+      },
+      {
+        "label": "B",
+        "meaning": "The VDR has reasonable protections in place. However, motivated and well resourced attackers could temporarily disrupt access in a targeted context."
+      },
+      {
+        "label": "C",
+        "meaning": "Attackers could permanently disrupt access in a targeted context."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Control over an identifier is far less valuable if the propagation of that control can be limited by someone else.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.5",
+    "sectionRef": "#availability"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/29",
+  "question": "Is the current state of a DID document provably correct from a history that's visible to anyone who can resolve the DID?",
+  "name": "Provenance",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Every evolution of state is recorded, accessible, and linked appropriately to its predecessor. Arbitrary versions can be queried and proved correct, and they have a reasonably useful timestamp."
+      },
+      {
+        "label": "B",
+        "meaning": "Adequate evidence of proper evolution exists, and a forensic analysis could prove correctness. However, it's not exposed for consumption of ordinary resolvers, it lacks supporting metadata, or it's exposed in a very suboptimal way."
+      },
+      {
+        "label": "C",
+        "meaning": "Limited evidence of proper evolution exists."
+      },
+      {
+        "label": "D",
+        "meaning": "No evidence of proper evolution exists; the users have to trust the system's assertion that the current state resulted from something appropriate."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "It's possible to tamper with systems that don't actively prove the correctness of their current state. Such tampering is not easy to discover.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.6",
+    "sectionRef": "#evolution"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/30",
+  "question": "Is the code of the method published, does it have many contributors, and does it have a published vulnerability reporting (responsible disclosure) mechanism?",
+  "name": "Many Eyes",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "The code is public. It has hundreds of contributors. Common Vulnerability and Exposures (CVEs) or similar reports have been published and handled appropriately."
+      },
+      {
+        "label": "B",
+        "meaning": "The code is public, but the list of contributors is small. No vulnerability reporting mechanism has been announced, or it's been announced but has no demonstrable track record."
+      },
+      {
+        "label": "C",
+        "meaning": "The code is partly private."
+      },
+      {
+        "label": "D",
+        "meaning": "The code is entirely private."
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "Security vulnerabilities tend to be found and fixed best in code that has many active contributions and a strong history of correctly handled responsible disclosure.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.7",
+    "sectionRef": "#many-eyes"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/31",
+  "question": "Is the Method compliant with US Federal requirements for the use of cryptography? ",
+  "name": "United States Federal Compliance",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "Both registry consensus *and* transaction validation are compliant"
+      },
+      {
+        "label": "B",
+        "meaning": "Transactions validation are compliant but consensus is not"
+      },
+      {
+        "label": "C",
+        "meaning": "No. Neither consensus nor transactions are compliant"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+}]

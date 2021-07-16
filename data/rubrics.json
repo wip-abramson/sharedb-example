@@ -1,0 +1,10 @@
+{
+  "id":"https://w.rubric.cc/rubric/1",
+  "type":"https://w.rubric.cc/rubric",
+  "name":"V1 Rubric 2021",
+  "desc" : "The rubric developed for the Veres One Rubric Evaluation",
+  "criteria":[
+    "https://w.rubric.cc/criteria/1",
+    "https://w.rubric.cc/criteria/2"
+  ]
+}

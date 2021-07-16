@@ -1,0 +1,652 @@
+[
+  {
+    "id": "https://w.rubric.cc/evaluations/1",
+    "criteriaId": "https://w.rubric.cc/criteria/1",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "spec": "B",
+      "net": "B",
+      "reg": "B",
+      "note": "Spec was created by Digital Bazaar, network and registry rules are managed by the Veres One Foundation Github is open to the public and the spec is a CCG Work Item."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null,
+    "evaluationDate":"2021.04.20"
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/2",
+    "criteriaId": "https://w.rubric.cc/criteria/1",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "spec": "A-",
+      "net": "A-",
+      "reg": "A-",
+      "note": "The Veres One Community Group is open to participation by anyone and it will be taking over control of the specification. However, the Veres Foundation, which will handle operational control, is likely to have a disproportionate voice in the evolution of the specification, network, and registry."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/3",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/4",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/5",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/6",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/7",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/8",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/9",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/10",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/11",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/12",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/13",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/14",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/15",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/16",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/17",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/18",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/19",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/20",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/21",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/22",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/22",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/22",
+    "criteriaId": "https://w.rubric.cc/criteria/22",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/24",
+    "criteriaId": "https://w.rubric.cc/criteria/24",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/25",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/26",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/27",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/28",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/29",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/30",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/31",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/32",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/33",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/34",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/35",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/36",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/37",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/38",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/39",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/40",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/42",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/#",
+    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "responses": {
+      "spec": "",
+      "net": "",
+      "reg": "",
+      "note": ""
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  }
+]

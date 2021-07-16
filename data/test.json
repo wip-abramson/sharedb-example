@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "@protected": true,
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ler": "http://w3id.org/ler/v1#",
+    "alumni": "http://w3id.org/ler/alumni#",
+    "AlumniJsonLd-3.0": {
+      "@id": "alumni:AlumniJsonLd-3.0",
+      "@context": {
+        "@protected": true,
+        "payloadRecord": {
+          "@id": "ler:payloadRecord",
+          "@context": {
+            "@protected": true,
+            "alumniOf": {
+              "@id": "alumni:alumniOf",
+              "@type": "@id"
+            },
+            "AlmaMater": {
+              "@id": "alumni:AlmaMater",
+              "@context": {
+                "@protected": true,
+                "name": "schema:name"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

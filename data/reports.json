@@ -1,0 +1,309 @@
+[{
+  "id": "https://w.rubric.cc/reports/1",
+  "type":"https://rubric.cc/ns/report",
+  "title": "A Rubric Evaluation of Veres One",
+  "subtitle":"An evaluation of Veres One as compiled for the Department of Homeland Security’s 2021 Silicon Valley Innovation Program.",
+  "evaluators":[
+    "https://w.rubric.cc/evaluators/1",
+    "https://w.rubric.cc/evaluators/2"
+  ],
+  "evaluationDate":"2021-04-20",
+  "funding":"Funded by Digital Bazaar under DHS SVIP contract 70RSAT20T00000029.",
+  "useCases":[{
+    "name":"Long term verifiable credentials.",
+    "desc":"The use of DIDs as subject and identifiers for long term (life-long) verifiable credentials such as a digital Permanent Resident Card from the United States Citizens and Immigration Service."
+  }],
+  "url": "http://legreq.com/media/rubric.v1.2021.04.20.pdf",
+  "methods":[
+    "https://w.rubric.cc/methods/1",
+    "https://w.rubric.cc/methods/2"
+  ],
+  "sources":[
+    "https://w.rubric.cc/sources/1",
+    "https://w.rubric.cc/sources/2"
+  ],
+  "categories": [
+    {
+      "id":1,
+      "name": "Rulemaking",
+      "desc":"​Rulemaking criteria address who makes the rules and how. Output of rulemaking are the rules.",
+      "criteria": [
+        {
+          "id": "https://w.rubric.cc/criteria/1",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/2",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        }
+      ]
+    },{
+      "id":2,
+      "name":"Design",
+      "desc": "​Design is an output of the rulemaking process. It covers how the method is designed to work.",
+      "criteria":[
+	  {
+            "id": "https://w.rubric.cc/criteria/3",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+	    "id": "https://w.rubric.cc/criteria/4",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+	    ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/5",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/6",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+	    "id": "https://w.rubric.cc/criteria/7",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/8",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/9",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/10",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/1",
+              "https://w.rubric.cc/evaluations/2"
+            ]
+	  }
+      ]
+    },{
+      "id":3,
+      "name": "Operation",
+      "desc": "Operation criteria address how the rules are operationalized, ie., how are the rules embodied in a working system.​",
+      "criteria": [
+        { 
+          "id": "https://w.rubric.cc/criteria/11",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/12",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/13",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/14",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/15",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	}
+      ]
+    },{
+      "id":4,
+      "name": "Enforcement",
+      "desc": "These criteria address how rulebreaking is identified and addressed.​",
+      "criteria": [
+	{
+          "id": "https://w.rubric.cc/criteria/16",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/17",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/18",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/19",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        }
+      ]
+    },
+    {
+      "id":5,
+      "name": "Adoption (and diversity)",
+      "desc": "​Adoption criteria address how widely the method and its implementations are used by various parties and systems.​",
+      "criteria": [
+	{
+          "id": "https://w.rubric.cc/criteria/20",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/21",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/22",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/23",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/24",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        }
+      ]
+    },
+    {
+      "id":6,
+      "name": "Security",
+      "desc": "​​Security criteria address how the method is cryptographically secured.",
+      "criteria": [
+        {
+          "id": "https://w.rubric.cc/criteria/24",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/25",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/26",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/27",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/28",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/29",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/30",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/31",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/1",
+            "https://w.rubric.cc/evaluations/2"
+          ]
+        }
+      ]
+    }
+  ]
+}]
