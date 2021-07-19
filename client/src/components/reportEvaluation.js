@@ -1,5 +1,6 @@
+import ShareDb from 'sharedb-client'
 const React = require('react');
-const FakeDb = require('../fakedb');
+// const FakeDb = require('../fakedb');
 const Debug = require('debug');
 const debug = require('debug')('ReportEvaluation');
 const ReportEvaluation = ({ evaluation, template }) => {
@@ -19,8 +20,9 @@ const ReportEvaluation = ({ evaluation, template }) => {
     );
   }
 
+  let dbEvaluation;
   if (typeof evaluation === 'string') {
-    dbEvaluation = FakeDb.getFirstElement('evaluations', evaluation);
+    //dbEvaluation = FakeDb.getFirstElement('evaluations', evaluation);
     debug('eval retrieved: ', evaluation);
 
     if (!dbEvaluation)
@@ -34,7 +36,8 @@ const ReportEvaluation = ({ evaluation, template }) => {
     evaluation = dbEvaluation;
   }
 
-  let method = FakeDb.getFirstElement('methods', evaluation.method);
+  let method;
+//  let method = FakeDb.getFirstElement('methods', evaluation.method);
   debug('method: ', method);
   if(!method)
   {
@@ -59,4 +62,4 @@ const ReportEvaluation = ({ evaluation, template }) => {
   );
 
     };
-module.exports = ReportEvaluation;
+export { ReportEvaluation };

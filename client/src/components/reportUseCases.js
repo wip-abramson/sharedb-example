@@ -22,4 +22,4 @@ const ReportUseCases = ({ report }) => {
   )  
 }
 
-module.exports = ReportUseCases;
+export { ReportUseCases };

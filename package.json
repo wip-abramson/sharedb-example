@@ -9,7 +9,8 @@
     "watch": "npm run build-client && npm run watch-server",
     "start-server": "node server/index.js",
     "watch-server": "nodemon server/index.js",
-    "build-client": "cd client && npm run build",
+    "build-client": "cd client && npm run build-dev",
+    "watch-client": "cd client && npm run watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

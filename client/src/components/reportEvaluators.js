@@ -21,4 +21,4 @@ const ReportEvaluators = ({ report }) => {
   )  
 }
 
-module.exports = ReportEvaluators;
+export { ReportEvaluators };

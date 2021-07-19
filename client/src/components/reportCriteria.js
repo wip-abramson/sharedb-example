@@ -1,13 +1,16 @@
+import ShareDb from 'sharedb-client'
+import { ReportEvaluation } from './reportEvaluation'
+
 const React = require('react');
-const ReportEvaluation = require('./reportEvaluation');
-const FakeDb = require('../fakedb');
+
+// const FakeDb = require('../fakedb');
 const Debug = require('debug');
 const debug = Debug('ReportCriteria');
 
 const ReportCriteria = ({ criteria, evaluations }) => {
   let id = criteria.id || criteria;
   if (typeof criteria === 'string') {
-    criteria = FakeDb.getFirstElement('criteria', criteria);
+//    criteria = FakeDb.getFirstElement('criteria', criteria);
     // debug('retrieved: ', criteria);
   }
   debug('criteria ', criteria);
@@ -70,4 +73,4 @@ const ReportCriteria = ({ criteria, evaluations }) => {
  
 }
 
-module.exports = ReportCriteria;
+export { ReportCriteria };

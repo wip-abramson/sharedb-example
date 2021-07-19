@@ -2,8 +2,11 @@ var React = require('react');
 var ReportMasthead = require('./reportMasthead');
 var ReportCategories = require('./reportCategories');
 //var Criteria = require("criteria.js");
-const Report = ({ report }) => {
-  //console.log('report.js report.methods', report.methods);
+
+const Debug = require('debug');
+const debug = Debug('report');
+const Report = ({ report, db }) => {
+  debug('report.js', report, db);
   return (
     <html>
       <head>
@@ -11,12 +14,12 @@ const Report = ({ report }) => {
       </head>
       <body>
         <section key="masthead" className="ReportMasthead">
-          < ReportMasthead report={report} ></ReportMasthead>
-          < ReportCategories report={report}></ReportCategories>
+          < ReportMasthead report={report} db={db} ></ReportMasthead>
+{/*          < ReportCategories report={report}></ReportCategories>*/}
         </section>
       </body>
     </html>
   );
 }
 
-module.exports = Report;
+export { Report };

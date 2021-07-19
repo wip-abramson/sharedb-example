@@ -5,7 +5,10 @@ const ReportUseCases = require('./reportUseCases.js');
 const ReportMethod = require('./reportMethod');
 const ReportSource = require('./reportSource');
 
-const ReportMasthead = ({ report }) => {
+const Debug = require('debug');
+const debug = Debug('reportMasthead');
+const ReportMasthead = ({ report, db }) => {
+  debug(report, db);
 //  console.log('reprotMasthead report: ', report);
  // console.log('reportMasthead report.methods', report.methods);
   let methods = (
@@ -43,4 +46,4 @@ const ReportMasthead = ({ report }) => {
   );
 }
 
-module.exports = ReportMasthead;
+export { ReportMasthead };

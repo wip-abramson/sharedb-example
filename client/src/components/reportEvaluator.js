@@ -1,8 +1,9 @@
+import ShareDb from 'sharedb-client'
 const React = require('react');
-const FakeDb = require('../fakedb');
+// const FakeDb = require('../fakedb');
 const ReportEvaluator = ({ evaluator }) => {
   if (typeof evaluator === 'string') {
-    evaluator = FakeDb.getFirstElement('evaluators', evaluator);
+    // evaluator = FakeDb.getFirstElement('evaluators', evaluator);
   }
   
   let name,email;
@@ -15,4 +16,4 @@ const ReportEvaluator = ({ evaluator }) => {
   return name;
 }
 
-module.exports = ReportEvaluator;
+export { ReportEvaluator };

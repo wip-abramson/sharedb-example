@@ -1,10 +1,14 @@
+import ShareDb from 'sharedb-client'
 const React = require('react');
-const FakeDb = require('../fakedb');
+const Debug = require('debug');
+const debug = Debug('reportMethod');
+
+// const FakeDb = require('../fakedb');
 //var Criteria = require("criteria.js");
 const ReportMethod = ({ method, index }) => {
- // console.log('report method', method);
+  debug(method);
   if (typeof method === 'string') {
-    method = FakeDb.getFirstElement('methods', method);
+//    method = FakeDb.getFirstElement('methods', method);
   }
   let l, s, n, r, a;
   l = <th key={method.label}>{method.label}</th>;
@@ -32,11 +36,11 @@ const ReportMethod = ({ method, index }) => {
       ? <td key={r + index} > <a href={method.registryUrl}>{r}</a></td >
       : <td key={r + index}>{r}</td>
   }
-  methodDisplay = a
+  var methodDisplay = a
     ? <tr key={method.id+index}>{l}{a}</tr>
     : <tr key={method.id+index}>{l}{s}{n}{r}</tr>
   //console.log(methodDisplay);
   return methodDisplay;
 }
 
-module.exports = ReportMethod;
+export { ReportMethod };

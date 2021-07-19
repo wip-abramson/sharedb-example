@@ -30,4 +30,4 @@ const ReportCategories = ({ report }) => {
 
 
 
-module.exports = ReportCategories;
+export { ReportCategories };

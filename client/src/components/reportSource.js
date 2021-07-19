@@ -1,8 +1,9 @@
+import ShareDb from 'sharedb-client'
 const React = require('react');
-const FakeDb = require('../fakedb');
+// const FakeDb = require('../fakedb');
 const ReportSource = ({ source }) => {
   if (typeof source === 'string') {
-    source = FakeDb.getFirstElement('sources', source);
+   // source = FakeDb.getFirstElement('sources', source);
   }
   //console.log('reportSource', source);
   return (
@@ -13,4 +14,4 @@ const ReportSource = ({ source }) => {
   );
 };
 
-module.exports = ReportSource;
+export { ReportSource };
