@@ -30,7 +30,7 @@ const DB_PORT = process.env.DB_PORT || 27017
 debug('PORT:    ', PORT);
 debug('DB_PORT: ', DB_PORT);
 
-debug('report[0]', reports[0]);
+//debug('report[0]', reports[0]);
 const db = require('sharedb-mongo')(`mongodb://localhost:${DB_PORT}`, {mongoOptions: {useUnifiedTopology: true}});
 const backend = new ShareDB({db}); 
 initialiseDb(startServer);
@@ -40,7 +40,7 @@ function initialiseDb(callback) {
   var connection = backend.connect();
 
   reports.forEach(function(report){
-    debug('fetching report', report);
+   // debug('fetching report', report);
     var reportDoc = connection.get('report', report.id)
     reportDoc.fetch(function (err) {
     
