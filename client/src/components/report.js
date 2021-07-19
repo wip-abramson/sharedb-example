@@ -1,5 +1,6 @@
-var React = require('react');
-var ReportMasthead = require('./reportMasthead');
+import React from 'react'
+import { ReportMasthead } from './reportMasthead'
+//var ReportMasthead = require('./reportMasthead');
 var ReportCategories = require('./reportCategories');
 //var Criteria = require("criteria.js");
 
