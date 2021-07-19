@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import ReconnectingWebSocket from 'reconnecting-websocket'
 import ShareDb from 'sharedb-client'
 import React from 'react'
+import { Report } from './components/report'
+//var Report = require('../src/components/report');
+
 
 const EXPRESS_PORT = process.env.REACT_APP_EXPRESS_PORT || 8000;
 
@@ -12,14 +14,13 @@ function App() {
 
     let [dbConnection, setDbConnection] = React.useState(null)
     let [reportDocument, setReportDocument] = React.useState(null)
-    let [count, setCount] = React.useState(null)
+    // let [count, setCount] = React.useState(null)
 
+    // let [latestVersion,setLatestVersion] = React.useState(null)
 
-    let [latestVersion,setLatestVersion] = React.useState(null)
+    // let [previousVersion, setPreviousVersion] = React.useState("")
 
-    let [previousVersion, setPreviousVersion] = React.useState("")
-
-    let [previousSnapshot, setPreviousSnapshot] = React.useState(null)
+    // let [previousSnapshot, setPreviousSnapshot] = React.useState(null)
 
     React.useEffect(() => {
         console.log("Load webhook")
@@ -34,7 +35,7 @@ function App() {
         setReportDocument(reportDoc)
         console.log("LATEST VERSION ", reportDoc.version)
 
-        setLatestVersion(reportDoc.version)
+        //setLatestVersion(reportDoc.version)
 
 
     }, [])
@@ -48,7 +49,7 @@ function App() {
             // // When document changes (by this client or any other, or the server),
             // // update the number on the page
             // counterDocument.on('op', updateNumClicks);
-          console.log("subscrived", reportDocument)
+          console.log("subscribed", reportDocument)
 
 
         }
@@ -86,22 +87,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          {reportDocument ?
-
-              <div style={{"font-family": "Helvetica Neue, Helvetica, Arial, sans-serif", "font-size": "36px"}}>
-                  <h2>Current Count</h2>
-                  <div>Version {latestVersion}</div>
-              Count {count ? <span id="num-clicks">{count}</span> : "loading"} times.
-
+        <Report report={reportDocument} db={dbConnection}></Report>
                   {/*<button style={{"font-size": "36px"}} onClick={decrement}>-1</button>*/}
                   {/*<button style={{"font-size": "36px"}} onClick={increment}>+1</button>*/}
-
-
-
-          </div> :
               <div>...Loading</div>
-          }
-
       </header>
     </div>
   );
