@@ -6,8 +6,8 @@ import ReportCategories from './reportCategories';
 
 const Debug = require('debug');
 const debug = Debug('report');
-const Report = ({ report, db }) => {
-  debug('report.js', report, db);
+const Report = ({ report }) => {
+  debug('report.js', report);
   return (
     <html>
       <head>
@@ -16,7 +16,7 @@ const Report = ({ report, db }) => {
       <body>
         <section key="masthead" className="ReportMasthead">
           {report && <>
-            < ReportMasthead report={report} db={db} ></ReportMasthead>
+            {/*< ReportMasthead report={report} db={db} ></ReportMasthead>*/}
             < ReportCategories report={report}></ReportCategories>
           </>}
 

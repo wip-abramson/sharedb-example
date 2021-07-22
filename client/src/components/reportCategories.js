@@ -15,8 +15,7 @@ const ReportCategories = ({ report }) => {
 
             {category.criteria && category.criteria.map((criteria) => {
               return (
-                <ReportCriteria criteria={criteria.id} key={criteria.id} evaluations={criteria.evaluations}>
-                </ReportCriteria>
+                <ReportCriteria criteriaId={criteria.id} key={criteria.id} evaluations={criteria.evaluations}/>
               )
             })}
 

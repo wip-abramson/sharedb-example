@@ -10,11 +10,16 @@ const EXPRESS_PORT = process.env.REACT_APP_EXPRESS_PORT || 8000;
 
 const EXPRESS_HOST = process.env.REACT_APP_EXPRESS_HOST || "localhost"
 
+export const DbConnectionContext = React.createContext();
+
 function App() {
 
   let [dbConnection, setDbConnection] = React.useState(null)
   let [reportDocument, setReportDocument] = React.useState(null)
   let [reportData, setReportData] = React.useState(null)
+
+
+
   // let [count, setCount] = React.useState(null)
 
   // let [latestVersion,setLatestVersion] = React.useState(null)
@@ -24,7 +29,6 @@ function App() {
   // let [previousSnapshot, setPreviousSnapshot] = React.useState(null)
 
   React.useEffect(() => {
-    console.log("Load webhook")
     // Open WebSocket connection to ShareDB server
     let socket = new ReconnectingWebSocket(`ws://${EXPRESS_HOST}:${EXPRESS_PORT}`);
     let connection = new ShareDb.Connection(socket);
@@ -42,8 +46,6 @@ function App() {
       console.log("Document set")
       // Get initial value of document and subscribe to changes
       reportDocument.subscribe(updateReportData);
-
-
     }
 
   }, [reportDocument])
@@ -80,10 +82,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {reportData && <Report report={reportData} db={dbConnection}></Report>}
-        {/*<button style={{"font-size": "36px"}} onClick={decrement}>-1</button>*/}
-        {/*<button style={{"font-size": "36px"}} onClick={increment}>+1</button>*/}
-        <div>...Loading</div>
+        {dbConnection ?
+            <DbConnectionContext.Provider value={dbConnection}>
+              {reportData && <Report report={reportData}></Report>}
+            </DbConnectionContext.Provider>
+            :
+          <div>...Loading</div>
+        }
+
       </header>
     </div>
   );

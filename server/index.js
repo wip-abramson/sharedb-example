@@ -10,10 +10,10 @@ const fs = require('fs');
 const Debug = require('debug');
 const debug = Debug('index.js');
 debug('PWD', process.env.PWD);
-var criteria, evaluations, evaluators, methods, reports, rubrics, sources;
+var criteriaList, evaluations, evaluators, methods, reports, rubrics, sources;
 
 try {
-  criteria = JSON.parse(fs.readFileSync('./data/criteria.json'));
+  criteriaList = JSON.parse(fs.readFileSync('./data/criteria.json'));
   evaluations = JSON.parse(fs.readFileSync('./data/evaluations.json'));
   evaluators = JSON.parse(fs.readFileSync('./data/evaluators.json'));
   methods = JSON.parse(fs.readFileSync('./data/methods.json'));
@@ -32,7 +32,7 @@ debug('DB_PORT: ', DB_PORT);
 
 //debug('report[0]', reports[0]);
 const db = require('sharedb-mongo')(`mongodb://localhost:${DB_PORT}`, {mongoOptions: {useUnifiedTopology: true}});
-const backend = new ShareDB({db}); 
+const backend = new ShareDB({db});
 initialiseDb(startServer);
 
 // Create initial document then fire callback
@@ -43,16 +43,32 @@ function initialiseDb(callback) {
    // debug('fetching report', report);
     var reportDoc = connection.get('report', report.id)
     reportDoc.fetch(function (err) {
-    
+
       if (err) throw err;
       if (reportDoc.type === null) {
-        console.log("creating document")
+        console.log("creating report", report.id)
         reportDoc.create(report, () => {
         });
         return;
       }
-    }) 
+    })
   });
+
+  criteriaList.forEach(function(criteria) {
+    let criteriaDoc = connection.get('criteria', criteria.id)
+
+    criteriaDoc.fetch(function(err) {
+      if (err) throw err;
+      if (criteriaDoc.type === null) {
+        console.log("creating criteria", criteria.id)
+        criteriaDoc.create(criteria, () => {
+        });
+        return;
+      }
+    })
+  })
+
+
 
   callback();
 }
