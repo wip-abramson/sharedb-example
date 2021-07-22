@@ -1,5 +1,5 @@
 import ShareDb from 'sharedb-client'
-import { ReportEvaluation } from './reportEvaluation'
+import ReportEvaluation from './reportEvaluation'
 
 const React = require('react');
 
@@ -70,7 +70,7 @@ const ReportCriteria = ({ criteria, evaluations }) => {
       </section>
     </section>
   )
- 
+
 }
 
-export { ReportCriteria };
+export default ReportCriteria;

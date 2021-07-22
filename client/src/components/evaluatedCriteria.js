@@ -12,3 +12,5 @@ const EvaluatedCriteria = ({ criteria }) => {
       <Response></Response>
     </section>
   )};
+
+export default EvaluatedCriteria

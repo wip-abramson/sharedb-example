@@ -1,7 +1,7 @@
 import React from 'react'
-import { ReportMasthead } from './reportMasthead'
+import ReportMasthead from './reportMasthead'
 //var ReportMasthead = require('./reportMasthead');
-var ReportCategories = require('./reportCategories');
+import ReportCategories from './reportCategories';
 //var Criteria = require("criteria.js");
 
 const Debug = require('debug');
@@ -15,12 +15,16 @@ const Report = ({ report, db }) => {
       </head>
       <body>
         <section key="masthead" className="ReportMasthead">
-          < ReportMasthead report={report} db={db} ></ReportMasthead>
-{/*          < ReportCategories report={report}></ReportCategories>*/}
+          {report && <>
+            < ReportMasthead report={report} db={db} ></ReportMasthead>
+            < ReportCategories report={report}></ReportCategories>
+          </>}
+
+
         </section>
       </body>
     </html>
   );
 }
 
-export { Report };
+export default Report;

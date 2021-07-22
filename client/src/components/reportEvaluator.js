@@ -5,7 +5,7 @@ const ReportEvaluator = ({ evaluator }) => {
   if (typeof evaluator === 'string') {
     // evaluator = FakeDb.getFirstElement('evaluators', evaluator);
   }
-  
+
   let name,email;
   if (evaluator.email) {
     email = "mailto:" + evaluator.email;
@@ -16,4 +16,4 @@ const ReportEvaluator = ({ evaluator }) => {
   return name;
 }
 
-export { ReportEvaluator };
+export default ReportEvaluator;

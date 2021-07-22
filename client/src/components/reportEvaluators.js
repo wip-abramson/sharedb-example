@@ -1,8 +1,10 @@
+
+import ReportEvaluator from './reportEvaluator';
 const React = require('react');
-const ReportEvaluator = require('./reportEvaluator');
+
 const ReportEvaluators = ({ report }) => {
   var s = "";
-  if (report.evaluators.length > 1) 
+  if (report.evaluators.length > 1)
     s = "s";
   let evaluatorLabel = <th><a>Evaluator</a>{s}</th>;
 
@@ -18,7 +20,7 @@ const ReportEvaluators = ({ report }) => {
         })}
       </td>
     </tr>
-  )  
+  )
 }
 
-export { ReportEvaluators };
+export default ReportEvaluators;

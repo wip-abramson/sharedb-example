@@ -1,9 +1,9 @@
 import React from 'react'
-const ReportEvaluators = require('./reportEvaluators.js');
-const ReportUseCases = require('./reportUseCases.js');
+import ReportEvaluators from './reportEvaluators.js';
+import ReportUseCases from './reportUseCases.js';
 //const FakeDb = require('fakedb.js');
-const ReportMethod = require('./reportMethod');
-const ReportSource = require('./reportSource');
+import ReportMethod from './reportMethod';
+import ReportSource from './reportSource';
 
 const Debug = require('debug');
 const debug = Debug('reportMasthead');
@@ -34,7 +34,7 @@ const ReportMasthead = ({ report, db }) => {
         <tr><th>Funding</th><td colSpan="3">{report.funding}</td></tr>
         <ReportUseCases report={report}></ReportUseCases>
         <tr><th>Report URL</th><td colSpan="3"><a href={report.url}>{report.url}</a></td></tr>
-        
+
         <tr><td className="heading" colSpan="4">Methods Evaluated</td></tr>
         <tr><td></td><th>Specification</th><th>Network</th><th>Registry</th></tr>
         {methods}
@@ -46,4 +46,4 @@ const ReportMasthead = ({ report, db }) => {
   );
 }
 
-export { ReportMasthead };
+export default ReportMasthead ;

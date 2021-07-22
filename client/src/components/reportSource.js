@@ -14,4 +14,4 @@ const ReportSource = ({ source }) => {
   );
 };
 
-export { ReportSource };
+export default ReportSource;

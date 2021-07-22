@@ -19,7 +19,7 @@ const ReportUseCases = ({ report }) => {
         })}
       </td>
     </tr>
-  )  
+  )
 }
 
-export { ReportUseCases };
+export default ReportUseCases;

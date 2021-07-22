@@ -1,5 +1,5 @@
 import React from 'react'
-var ReportCriteria = require('./reportCriteria');
+import ReportCriteria from './reportCriteria';
 
 const ReportCategories = ({ report }) => {
 
@@ -30,4 +30,4 @@ const ReportCategories = ({ report }) => {
 
 
 
-export { ReportCategories };
+export default ReportCategories;

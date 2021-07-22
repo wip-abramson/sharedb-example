@@ -6,7 +6,7 @@ const debug = Debug('reportMethod');
 // const FakeDb = require('../fakedb');
 //var Criteria = require("criteria.js");
 const ReportMethod = ({ method, index }) => {
-  debug(method);
+  debug(method)
   if (typeof method === 'string') {
 //    method = FakeDb.getFirstElement('methods', method);
   }
@@ -43,4 +43,4 @@ const ReportMethod = ({ method, index }) => {
   return methodDisplay;
 }
 
-export { ReportMethod };
+export default ReportMethod;

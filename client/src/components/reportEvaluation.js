@@ -62,4 +62,4 @@ const ReportEvaluation = ({ evaluation, template }) => {
   );
 
     };
-export { ReportEvaluation };
+export default ReportEvaluation;
