@@ -14,48 +14,20 @@ export const DbConnectionContext = React.createContext();
 
 function App() {
 
+  let reportId = 'https://w.rubric.cc/reports/1';
+
   let [dbConnection, setDbConnection] = React.useState(null)
-  let [reportDocument, setReportDocument] = React.useState(null)
-  let [reportData, setReportData] = React.useState(null)
-
-
-
-  // let [count, setCount] = React.useState(null)
-
-  // let [latestVersion,setLatestVersion] = React.useState(null)
-
-  // let [previousVersion, setPreviousVersion] = React.useState("")
-
-  // let [previousSnapshot, setPreviousSnapshot] = React.useState(null)
 
   React.useEffect(() => {
     // Open WebSocket connection to ShareDB server
     let socket = new ReconnectingWebSocket(`ws://${EXPRESS_HOST}:${EXPRESS_PORT}`);
     let connection = new ShareDb.Connection(socket);
     setDbConnection(connection)
-    // Create local Doc instance mapped to 'examples' collection document with id 'counter'
-    let reportDoc = connection.get('report', 'https://w.rubric.cc/reports/1');
-
-    setReportDocument(reportDoc)
-
-
   }, [])
 
-  React.useEffect(() => {
-    if (reportDocument) {
-      console.log("Document set")
-      // Get initial value of document and subscribe to changes
-      reportDocument.subscribe(updateReportData);
-    }
 
-  }, [reportDocument])
 
-  function updateReportData() {
-    console.log("set report data")
-    setReportData(reportDocument.data)
-    // setCount(reportDocument.data.count)
-    // setLatestVersion(reportDocument.version)
-  }
+
 
   // When clicking on the '+1' button, change the number in the local
   // document and sync the change to the server and other connected
@@ -84,7 +56,7 @@ function App() {
       <header className="App-header">
         {dbConnection ?
             <DbConnectionContext.Provider value={dbConnection}>
-              {reportData && <Report report={reportData}></Report>}
+              <Report reportId={reportId}></Report>
             </DbConnectionContext.Provider>
             :
           <div>...Loading</div>

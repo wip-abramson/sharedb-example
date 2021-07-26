@@ -1,11 +1,37 @@
 import ShareDb from 'sharedb-client'
+import {DbConnectionContext} from "../App";
+import EvaluationMethod from "./EvaluationMethod";
 const React = require('react');
 // const FakeDb = require('../fakedb');
 const Debug = require('debug');
 const debug = require('debug')('ReportEvaluation');
-const ReportEvaluation = ({ evaluation, template }) => {
-  debug(evaluation, template);
-  if(!evaluation)
+const ReportEvaluation = ({ evaluationId, template }) => {
+  debug(evaluationId, template);
+
+  const [evaluationDoc, setEvaluationDoc] = React.useState(null);
+  const [evaluationData, setEvaluationData] = React.useState(null);
+
+  const dbConnection = React.useContext(DbConnectionContext);
+
+ React.useEffect(() => {
+    debug("Fetch evaluation", evaluationId)
+    let doc = dbConnection.get('evaluations', evaluationId);
+    setEvaluationDoc(doc)
+  }, [evaluationId])
+
+  React.useEffect(() => {
+    if (evaluationDoc) {
+      // Get initial value of document and subscribe to changes
+      evaluationDoc.subscribe(updateEvaluationData);
+    }
+  }, [evaluationDoc])
+
+  function updateEvaluationData() {
+    debug("Evaluations Data", evaluationDoc.data)
+    setEvaluationData(evaluationDoc.data)
+  }
+
+  if(!evaluationId)
   {
     debug('Input evaluation is NULL');
     return (
@@ -16,46 +42,21 @@ const ReportEvaluation = ({ evaluation, template }) => {
   {
     debug('Input template is NULL');
     return (
-      <td className="ERROR" key={'ReportEvaluation:' + evaluation}></td>
+      <td className="ERROR" key={'ReportEvaluation: ' + evaluationId}></td>
     );
   }
 
-  let dbEvaluation;
-  if (typeof evaluation === 'string') {
-    //dbEvaluation = FakeDb.getFirstElement('evaluations', evaluation);
-    debug('eval retrieved: ', evaluation);
-
-    if (!dbEvaluation)
-    {
-      debug('String evaluation lookup failed');
-      return (
-        <td className="ERROR" key={'ReportEvaluation:' + evaluation}></td>
-      );
-    }
-
-    evaluation = dbEvaluation;
-  }
-
-  let method;
-//  let method = FakeDb.getFirstElement('methods', evaluation.method);
-  debug('method: ', method);
-  if(!method)
-  {
-    debug('method is NULL');
-    return (
-      <td className="ERROR" key={'ReportEvaluation:' + evaluation}></td>
-    );
-  }
-  return (
-    <tr key={'eval:' + evaluation.id} >
-      {template && template.map((column, columnI) => {
+  return evaluationData && (
+    <tr key={'eval:' + evaluationId} >
+      {template && template.map((column, columnIndex) => {
         if (column.propertyRef === 'method') {
+          // TODO: Suggest method => methodId in data model
           return (
-            <th key={'evalMethod:' + method.id +evaluation.id}>{method.label}</th>
+            <EvaluationMethod key={'evalMethod:' + evaluationData.id + evaluationData.method} methodId={evaluationData.method}/>
           );
         } else {
-          return (<td key={'evalEntry:' + method.id + evaluation.id + String(columnI)}>
-            {evaluation.responses[column.propertyRef]}</td>);
+          return (<td key={'evalEntry:' + evaluationData.method + evaluationData.id + String(columnIndex)}>
+            {evaluationData.responses[column.propertyRef]}</td>);
         }
       })}
     </tr>

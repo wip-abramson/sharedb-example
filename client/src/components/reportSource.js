@@ -1,17 +1,38 @@
-import ShareDb from 'sharedb-client'
+import {DbConnectionContext} from "../App";
+const Debug = require('debug');
+const debug = Debug('ReportSource');
 const React = require('react');
-// const FakeDb = require('../fakedb');
-const ReportSource = ({ source }) => {
-  if (typeof source === 'string') {
-   // source = FakeDb.getFirstElement('sources', source);
+
+const ReportSource = ({ sourceId }) => {
+
+  const dbConnection = React.useContext(DbConnectionContext);
+
+  let [sourceDoc, setSourceDoc] = React.useState();
+  let [sourceData, setSourceData]= React.useState();
+
+  React.useEffect(() => {
+    let doc = dbConnection.get('source', sourceId)
+    setSourceDoc(doc)
+  }, [sourceId])
+
+  React.useEffect(() => {
+    if (sourceDoc) {
+      sourceDoc.subscribe(updateSourceData)
+    }
+  }, [sourceDoc])
+
+  function updateSourceData() {
+    debug("Source Data", sourceDoc.data)
+    setSourceData(sourceDoc.data)
   }
-  //console.log('reportSource', source);
-  return (
-    <tr key={source.id}>
-      <th>{source.title}</th>
-      <td colSpan="3"><a href={source.url}>{source.url}</a></td>
+
+
+  return sourceData ? (
+    <tr key={sourceData.id}>
+      <th>{sourceData.title}</th>
+      <td colSpan="3"><a href={sourceData.url}>{sourceData.url}</a></td>
     </tr>
-  );
+  ) : <tr/>;
 };
 
 export default ReportSource;

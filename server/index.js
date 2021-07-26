@@ -39,38 +39,35 @@ initialiseDb(startServer);
 function initialiseDb(callback) {
   var connection = backend.connect();
 
-  reports.forEach(function(report){
-   // debug('fetching report', report);
-    var reportDoc = connection.get('report', report.id)
-    reportDoc.fetch(function (err) {
 
-      if (err) throw err;
-      if (reportDoc.type === null) {
-        console.log("creating report", report.id)
-        reportDoc.create(report, () => {
-        });
-        return;
-      }
-    })
-  });
-
-  criteriaList.forEach(function(criteria) {
-    let criteriaDoc = connection.get('criteria', criteria.id)
-
-    criteriaDoc.fetch(function(err) {
-      if (err) throw err;
-      if (criteriaDoc.type === null) {
-        console.log("creating criteria", criteria.id)
-        criteriaDoc.create(criteria, () => {
-        });
-        return;
-      }
-    })
-  })
+  createDocumentData(connection, 'report', reports);
+  createDocumentData(connection, 'criteria', criteriaList);
+  // TODO Do we want plural here?
+  createDocumentData(connection, 'evaluations', evaluations);
+  createDocumentData(connection, 'methods', methods);
+  createDocumentData(connection, 'source', sources);
+  createDocumentData(connection, 'evaluators', evaluators)
 
 
 
   callback();
+}
+
+function createDocumentData(connection, documentName, dataList) {
+  dataList.forEach(documentData => {
+    let document = connection.get(documentName, documentData.id);
+
+    document.fetch((err) => {
+      if (err) throw err;
+      if (document.type === null) {
+        console.log(`creating ${documentName}`, documentData.id);
+        document.create(documentData, () => {
+        });
+        return;
+      }
+    })
+
+  })
 }
 
 function startServer() {

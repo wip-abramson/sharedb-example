@@ -3,7 +3,6 @@ import ReportCriteria from './reportCriteria';
 
 const ReportCategories = ({ report }) => {
 
-  //console.log('ReportCategories', report.categories);
   return (
     <div>
       <h1>The Criteria</h1>

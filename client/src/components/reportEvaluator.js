@@ -1,19 +1,44 @@
-import ShareDb from 'sharedb-client'
+import {DbConnectionContext} from "../App";
+const Debug = require('debug');
+const debug = Debug('ReportEvaluator');
 const React = require('react');
-// const FakeDb = require('../fakedb');
-const ReportEvaluator = ({ evaluator }) => {
-  if (typeof evaluator === 'string') {
-    // evaluator = FakeDb.getFirstElement('evaluators', evaluator);
+
+const ReportEvaluator = ({ evaluatorId }) => {
+
+  const dbConnection = React.useContext(DbConnectionContext);
+
+  let [evaluatorDoc, setEvaluatorDoc] = React.useState();
+  let [evaluatorData, setEvaluatorData] = React.useState();
+
+  React.useEffect(() => {
+    let doc = dbConnection.get('evaluators', evaluatorId);
+    setEvaluatorDoc(doc)
+  }, [evaluatorId]);
+
+  React.useEffect(() => {
+    if (evaluatorDoc) {
+      evaluatorDoc.subscribe(updateEvaluatorData)
+    }
+  }, [evaluatorDoc]);
+
+  function updateEvaluatorData() {
+    console.log("Update evaluator data", evaluatorDoc.data)
+    debug("Evaluator Data", evaluatorDoc.data)
+    setEvaluatorData(evaluatorDoc.data)
+  }
+
+  if (!evaluatorData) {
+    return <span>Loading</span>
   }
 
   let name,email;
-  if (evaluator.email) {
-    email = "mailto:" + evaluator.email;
-    name = <span className="evaluator" key={evaluator.name}>{evaluator.name} &lt;<a href={email}>{evaluator.email}</a>&gt;</span>;
+  if (evaluatorData.email) {
+    email = "mailto:" + evaluatorData.email;
+    name = <span className="evaluator" key={evaluatorData.name}>{evaluatorData.name} &lt;<a href={email}>{evaluatorData.email}</a>&gt;</span>;
   } else {
-    name = <span className="evaluator" key={evaluator.name}>{evaluator.name}</span>
+    name = <span className="evaluator" key={evaluatorData.name}>{evaluatorData.name}</span>
   }
-  return name;
+  return name
 }
 
 export default ReportEvaluator;

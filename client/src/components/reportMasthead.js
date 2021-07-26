@@ -7,19 +7,19 @@ import ReportSource from './reportSource';
 
 const Debug = require('debug');
 const debug = Debug('reportMasthead');
-const ReportMasthead = ({ report, db }) => {
-  debug(report, db);
+const ReportMasthead = ({ report }) => {
+  debug(report);
 //  console.log('reprotMasthead report: ', report);
  // console.log('reportMasthead report.methods', report.methods);
   let methods = (
-    report.methods && report.methods.map((method, index) => {
-      return <ReportMethod method={method} index={index} key={method + index}></ReportMethod>;
+    report.methods && report.methods.map((methodId, index) => {
+      return <ReportMethod methodId={methodId} index={index} key={methodId + index}/>;
      })
   )
 
   let sources = (
     report.sources && report.sources.map((sourceId) => {
-      return <ReportSource key={sourceId} source={sourceId}></ReportSource>;
+      return <ReportSource key={sourceId} sourceId={sourceId}/>;
     })
   )
 
@@ -29,7 +29,7 @@ const ReportMasthead = ({ report, db }) => {
       <p>{report.subtitle}</p>
       <table key={report.id+'table'} className="simple">
         <tr><td className='heading' colSpan="4">Rubric Evaluation</td></tr>
-        <ReportEvaluators report={report}></ReportEvaluators>
+        <ReportEvaluators evaluators={report.evaluators}></ReportEvaluators>
         <tr><th>Evaluation Date</th><td colSpan="3">{report.evaluationDate}</td></tr>
         <tr><th>Funding</th><td colSpan="3">{report.funding}</td></tr>
         <ReportUseCases report={report}></ReportUseCases>

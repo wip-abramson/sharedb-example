@@ -2,9 +2,9 @@
 import ReportEvaluator from './reportEvaluator';
 const React = require('react');
 
-const ReportEvaluators = ({ report }) => {
+const ReportEvaluators = ({ evaluators }) => {
   var s = "";
-  if (report.evaluators.length > 1)
+  if (evaluators.length > 1)
     s = "s";
   let evaluatorLabel = <th><a>Evaluator</a>{s}</th>;
 
@@ -12,11 +12,11 @@ const ReportEvaluators = ({ report }) => {
     <tr>
       {evaluatorLabel}
       <td className="value" colSpan="3">
-        {report.evaluators && report.evaluators.map((evaluatorId, i) => {
+        {evaluators && evaluators.map((evaluatorId, i) => {
           if (i)
-            return (<span key={i}>, <ReportEvaluator evaluator={evaluatorId}></ReportEvaluator></span>)
+            return (<span key={i}>, <ReportEvaluator evaluatorId={evaluatorId}/></span>)
           else
-            return (<span key={i}><ReportEvaluator evaluator={evaluatorId}></ReportEvaluator></span>);
+            return (<span key={i}><ReportEvaluator evaluatorId={evaluatorId}/></span>);
         })}
       </td>
     </tr>

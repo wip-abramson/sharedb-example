@@ -8,7 +8,7 @@ const React = require('react');
 const Debug = require('debug');
 const debug = Debug('ReportCriteria');
 
-const ReportCriteria = ({ criteriaId, evaluations }) => {
+const ReportCriteria = ({criteriaId, evaluations}) => {
 
   const [criteriaDoc, setCriteriaDoc] = React.useState(null);
   const [criteriaData, setCriteriaData] = React.useState(null);
@@ -39,14 +39,14 @@ const ReportCriteria = ({ criteriaId, evaluations }) => {
   debug('evaluations', evaluations);
   if (!criteriaData)
     return (
-      <section key={'critieriaSection:'+ criteriaId }>
+      <section key={'critieriaSection:' + criteriaId}>
         <p>id:{criteriaId} not found</p>
       </section>
     )
   //   ;
 
   return (
-      <section key={'criteriaSection'+criteriaData.id}>
+    <section key={'criteriaSection' + criteriaData.id}>
       <h4>{criteriaData.name}</h4>
       <section>
         <h5>Question</h5>
@@ -55,7 +55,7 @@ const ReportCriteria = ({ criteriaId, evaluations }) => {
       <section>
         <h5>Responses</h5>
         <ol type="A">
-          {criteriaData.response && criteriaData.response.possibleResponses && criteriaData.response.possibleResponses.map((response,i) => {
+          {criteriaData.response && criteriaData.response.possibleResponses && criteriaData.response.possibleResponses.map((response, i) => {
             return (
               <li key={`response:${criteriaData.id}:${i}`}>{response.meaning}</li>
             )
@@ -70,23 +70,28 @@ const ReportCriteria = ({ criteriaId, evaluations }) => {
       </section>
       <section>
         <h5>Evaluation</h5>
-        <table key={'table.'+criteriaData.id} className="simple">
+        <table key={'table.' + criteriaData.id} className="simple">
+          <tbody>
           <tr>
             {criteriaData.evaluationTemplate &&
             criteriaData.evaluationTemplate.columns &&
             criteriaData.evaluationTemplate.columns.map((column, i) => {
-                return (
-                  <th key={String(i) + column.heading}>{column.heading}</th>
-                );
-              })}
+              return (
+                <th key={String(i) + column.heading}>{column.heading}</th>
+              );
+            })}
           </tr>
-          {/*{evaluations &&*/}
-            {/*evaluations.map((evaluation) => {*/}
-              {/*return (*/}
-                {/*<ReportEvaluation key={'reportEvaluation.'+evaluation.id} evaluation={evaluation} template={criteriaData.evaluationTemplate.columns}>*/}
-                {/*</ReportEvaluation>*/}
-              {/*)*/}
-            {/*})}*/}
+          {evaluations &&
+          evaluations.map((evaluationId) => {
+            return (
+              <ReportEvaluation key={'reportEvaluation.' + evaluationId} evaluationId={evaluationId}
+                                template={criteriaData.evaluationTemplate.columns}>
+              </ReportEvaluation>
+            )
+          })}
+          </tbody>
+
+
         </table>
       </section>
     </section>
