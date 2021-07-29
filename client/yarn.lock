@@ -10038,6 +10038,13 @@
   "resolved" "https://registry.npmjs.org/sharedb-client/-/sharedb-client-1.3.4.tgz"
   "version" "1.3.4"
 
+"sharedb-string-binding@^1.0.0":
+  "integrity" "sha1-B3DjbNzyxgiETd348KOL5CVksQI="
+  "resolved" "https://registry.npmjs.org/sharedb-string-binding/-/sharedb-string-binding-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "text-diff-binding" "^1.0.0"
+
 "shebang-command@^1.2.0":
   "integrity" "sha1-RKrGW2lbAzmJaMOfNj/uXer98eo="
   "resolved" "https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz"
@@ -10755,6 +10762,11 @@
     "@istanbuljs/schema" "^0.1.2"
     "glob" "^7.1.4"
     "minimatch" "^3.0.4"
+
+"text-diff-binding@^1.0.0":
+  "integrity" "sha1-Pgrfy3ruGcFuOv0+e32JeZjkKic="
+  "resolved" "https://registry.npmjs.org/text-diff-binding/-/text-diff-binding-1.1.0.tgz"
+  "version" "1.1.0"
 
 "text-table@^0.2.0", "text-table@0.2.0":
   "integrity" "sha1-f17oI66AUgfACvLfSoTsP8+lcLQ="

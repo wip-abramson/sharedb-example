@@ -1,4 +1,4 @@
-import ShareDb from 'sharedb-client'
+import StringBinding from 'sharedb-string-binding'
 import {DbConnectionContext} from "../App";
 import EvaluationMethod from "./EvaluationMethod";
 const React = require('react');
@@ -23,12 +23,28 @@ const ReportEvaluation = ({ evaluationId, template }) => {
     if (evaluationDoc) {
       // Get initial value of document and subscribe to changes
       evaluationDoc.subscribe(updateEvaluationData);
+
     }
   }, [evaluationDoc])
 
   function updateEvaluationData() {
     debug("Evaluations Data", evaluationDoc.data)
     setEvaluationData(evaluationDoc.data)
+
+    evaluationDoc.on('op', (op, source) => {
+      debug("Evaluation operation", op, source)
+    })
+
+  }
+
+  function handleChange(columnRef, value) {
+    debug("Value Update", columnRef, value)
+    // let path = `responses.${columnRef}`
+    var op = {p: [`responses.${columnRef}`, 0], si: value};
+    evaluationDoc.submitOp(op, {}, (err) => {
+      if (err) throw err
+      debug("Op Submitted",  value)
+    });
   }
 
   if(!evaluationId)
@@ -54,8 +70,8 @@ const ReportEvaluation = ({ evaluationId, template }) => {
             <EvaluationMethod key={'evalMethod:' + evaluationData.id + evaluationData.methodId} methodId={evaluationData.methodId}/>
           );
         } else {
-          return (<td key={'evalEntry:' + evaluationData.method + evaluationData.id + String(columnIndex)}>
-            {evaluationData.responses[column.propertyRef]}</td>);
+          return (<td key={'evalEntry:' + evaluationData.methodId + evaluationData.id + String(columnIndex)}>
+            <input value={evaluationData.responses[column.propertyRef]} onChange={(e) => handleChange(column.propertyRef, e.target.value)}/></td>);
         }
       })}
     </tr>
