@@ -16,7 +16,6 @@ const ReportMethod = ({ methodId, index }) => {
   const dbConnection = React.useContext(DbConnectionContext);
   React.useEffect(() => {
     debug("Fetch method", methodId)
-    // TODO: methods or method?
     let doc = dbConnection.get('methods', methodId);
     setMethodDoc(doc)
   }, [methodId])

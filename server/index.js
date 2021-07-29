@@ -40,12 +40,12 @@ function initialiseDb(callback) {
   var connection = backend.connect();
 
 
-  createDocumentData(connection, 'report', reports);
+  createDocumentData(connection, 'reports', reports);
   createDocumentData(connection, 'criteria', criteriaList);
   // TODO Do we want plural here?
   createDocumentData(connection, 'evaluations', evaluations);
   createDocumentData(connection, 'methods', methods);
-  createDocumentData(connection, 'source', sources);
+  createDocumentData(connection, 'sources', sources);
   createDocumentData(connection, 'evaluators', evaluators)
 
 

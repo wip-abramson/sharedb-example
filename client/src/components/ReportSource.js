@@ -11,7 +11,7 @@ const ReportSource = ({ sourceId }) => {
   let [sourceData, setSourceData]= React.useState();
 
   React.useEffect(() => {
-    let doc = dbConnection.get('source', sourceId)
+    let doc = dbConnection.get('sources', sourceId)
     setSourceDoc(doc)
   }, [sourceId])
 

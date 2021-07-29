@@ -22,7 +22,6 @@ const ReportEvaluator = ({ evaluatorId }) => {
   }, [evaluatorDoc]);
 
   function updateEvaluatorData() {
-    console.log("Update evaluator data", evaluatorDoc.data)
     debug("Evaluator Data", evaluatorDoc.data)
     setEvaluatorData(evaluatorDoc.data)
   }

@@ -2,7 +2,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/1",
     "criteriaId": "https://w.rubric.cc/criteria/1",
-    "method": "https://w.rubric.cc/methods/1",
+    "methodId": "https://w.rubric.cc/methods/1",
     "responses": {
       "spec": "B",
       "net": "B",
@@ -19,7 +19,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/2",
     "criteriaId": "https://w.rubric.cc/criteria/1",
-    "method": "https://w.rubric.cc/methods/2",
+    "methodId": "https://w.rubric.cc/methods/2",
     "responses": {
       "spec": "A-",
       "net": "A-",
@@ -35,7 +35,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/3",
     "criteriaId": "https://w.rubric.cc/criteria/#",
-    "method": "https://w.rubric.cc/methods/1",
+    "methodId": "https://w.rubric.cc/methods/1",
     "responses": {
       "spec": "",
       "net": "",
@@ -51,7 +51,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/4",
     "criteriaId": "https://w.rubric.cc/criteria/#",
-    "method": "https://w.rubric.cc/methods/2",
+    "methodId": "https://w.rubric.cc/methods/2",
     "responses": {
       "spec": "",
       "net": "",

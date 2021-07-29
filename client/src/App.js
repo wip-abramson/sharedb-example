@@ -5,7 +5,6 @@ import React from 'react'
 import Report from './components/report'
 //var Report = require('../src/components/report');
 
-
 const EXPRESS_PORT = process.env.REACT_APP_EXPRESS_PORT || 8000;
 
 const EXPRESS_HOST = process.env.REACT_APP_EXPRESS_HOST || "localhost"
@@ -56,7 +55,7 @@ function App() {
       <header className="App-header">
         {dbConnection ?
             <DbConnectionContext.Provider value={dbConnection}>
-              <Report reportId={reportId}></Report>
+              <Report reportId={reportId}/>
             </DbConnectionContext.Provider>
             :
           <div>...Loading</div>

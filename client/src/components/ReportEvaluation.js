@@ -50,9 +50,8 @@ const ReportEvaluation = ({ evaluationId, template }) => {
     <tr key={'eval:' + evaluationId} >
       {template && template.map((column, columnIndex) => {
         if (column.propertyRef === 'method') {
-          // TODO: Suggest method => methodId in data model
           return (
-            <EvaluationMethod key={'evalMethod:' + evaluationData.id + evaluationData.method} methodId={evaluationData.method}/>
+            <EvaluationMethod key={'evalMethod:' + evaluationData.id + evaluationData.methodId} methodId={evaluationData.methodId}/>
           );
         } else {
           return (<td key={'evalEntry:' + evaluationData.method + evaluationData.id + String(columnIndex)}>
