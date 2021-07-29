@@ -1,6 +1,9 @@
-const React = require('react');
+import React from 'react'
+import Debug from 'debug'
+let debug = Debug("ReportUseCases");
+
 const ReportUseCases = ({ report }) => {
-  //console.log('ReportUseCases report', report);
+  debug('ReportUseCases report', report);
   var s = "";
   if (report.useCases.length > 1)
     s = "s";

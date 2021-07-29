@@ -17,7 +17,7 @@ const Reports = () => {
         debug("Error fetching reports", error)
         // TODO: Let user know
       } else {
-        console.log(results)
+        Debug("All result documents", results)
         setReportDocs(results)
       }
     })

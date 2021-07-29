@@ -65,7 +65,6 @@ const ReportMethod = ({ methodId, index }) => {
   var methodDisplay = a
     ? <tr key={methodData.id+index}>{l}{a}</tr>
     : <tr key={methodData.id+index}>{l}{s}{n}{r}</tr>
-  //console.log(methodDisplay);
   return methodDisplay;
 }
 

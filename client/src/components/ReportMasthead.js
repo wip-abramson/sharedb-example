@@ -9,8 +9,6 @@ const Debug = require('debug');
 const debug = Debug('reportMasthead');
 const ReportMasthead = ({ report }) => {
   debug(report);
-//  console.log('reprotMasthead report: ', report);
- // console.log('reportMasthead report.methods', report.methods);
   let methods = (
     report.methods && report.methods.map((methodId, index) => {
       return <ReportMethod methodId={methodId} index={index} key={methodId + index}/>;

@@ -29,7 +29,7 @@ const Report = () => {
 
   React.useEffect(() => {
     if (reportDocument) {
-      console.log("Document set")
+      debug("Report document set", reportDocument)
       // Get initial value of document and subscribe to changes
       reportDocument.subscribe(updateReportData);
     }
@@ -37,7 +37,7 @@ const Report = () => {
   }, [reportDocument])
 
   function updateReportData() {
-    console.log("set report data")
+    debug("set report data", reportDocument.data)
     setReportData(reportDocument.data)
   }
 
