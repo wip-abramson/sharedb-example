@@ -1,5 +1,5 @@
 import React from 'react'
-import ReportCriteria from './reportCriteria';
+import ReportCriteria from './ReportCriteria';
 
 const ReportCategories = ({ report }) => {
 

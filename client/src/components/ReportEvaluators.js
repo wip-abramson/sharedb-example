@@ -1,5 +1,5 @@
 
-import ReportEvaluator from './reportEvaluator';
+import ReportEvaluator from './ReportEvaluator';
 const React = require('react');
 
 const ReportEvaluators = ({ evaluators }) => {

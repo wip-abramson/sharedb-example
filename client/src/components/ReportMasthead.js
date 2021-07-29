@@ -1,9 +1,9 @@
 import React from 'react'
-import ReportEvaluators from './reportEvaluators.js';
-import ReportUseCases from './reportUseCases.js';
+import ReportEvaluators from './ReportEvaluators.js';
+import ReportUseCases from './ReportUseCases.js';
 //const FakeDb = require('fakedb.js');
-import ReportMethod from './reportMethod';
-import ReportSource from './reportSource';
+import ReportMethod from './ReportMethod';
+import ReportSource from './ReportSource';
 
 const Debug = require('debug');
 const debug = Debug('reportMasthead');

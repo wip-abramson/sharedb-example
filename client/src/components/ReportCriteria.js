@@ -1,5 +1,5 @@
 import ShareDb from 'sharedb-client'
-import ReportEvaluation from './reportEvaluation'
+import ReportEvaluation from './ReportEvaluation'
 import {DbConnectionContext} from '../App'
 
 const React = require('react');

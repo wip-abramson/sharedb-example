@@ -2,7 +2,14 @@ import './App.css';
 import ReconnectingWebSocket from 'reconnecting-websocket'
 import ShareDb from 'sharedb-client'
 import React from 'react'
-import Report from './components/report'
+import Report from './components/Report'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from "./components/Home";
 //var Report = require('../src/components/report');
 
 const EXPRESS_PORT = process.env.REACT_APP_EXPRESS_PORT || 8000;
@@ -52,16 +59,36 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        {dbConnection ?
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+          {dbConnection ?
             <DbConnectionContext.Provider value={dbConnection}>
-              <Report reportId={reportId}/>
+              <Switch>
+                <Route path="/report/:id">
+                  <Report />
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
             </DbConnectionContext.Provider>
             :
-          <div>...Loading</div>
-        }
+            <div>...Loading</div>
+          }
 
-      </header>
+        </div>
+      </Router>
+
     </div>
   );
 }
