@@ -33,18 +33,38 @@ const ReportEvaluation = ({ evaluationId, template }) => {
 
     evaluationDoc.on('op', (op, source) => {
       debug("Evaluation operation", op, source)
+      console.log(evaluationDoc)
+
     })
+
 
   }
 
-  function handleChange(columnRef, value) {
-    debug("Value Update", columnRef, value)
+  function handleKeyPress(columnRef, event) {
+    // debug("Value Update", columnRef, value)
     // let path = `responses.${columnRef}`
-    var op = {p: [`responses.${columnRef}`, 0], si: value};
-    evaluationDoc.submitOp(op, {}, (err) => {
-      if (err) throw err
-      debug("Op Submitted",  value)
-    });
+
+    // TODO: Lots
+    // Need to handle selction of multiple chars. I.e. overwrite/delete
+    if (event.target.selectionStart - event.target.selectionEnd === 0) {
+
+      // TODO need to determine which chars/keyCodes are ignored
+      let char = String.fromCharCode(event.keyCode)
+      debug("Insert", char, "index", event.target.selectionStart)
+
+      var op = {p: ['responses', columnRef, event.target.selectionStart], si: char};
+
+      evaluationDoc.submitOp(op, {}, (err) => {
+        if (err) console.log(err)
+        debug("Op Submitted",  op)
+        // debug(evaluationDoc.data)
+        // setEvaluationData(evaluationDoc.data)
+
+        setEvaluationData({...evaluationData, "responses": evaluationDoc.data.responses})
+
+      });
+    }
+
   }
 
   if(!evaluationId)
@@ -71,7 +91,14 @@ const ReportEvaluation = ({ evaluationId, template }) => {
           );
         } else {
           return (<td key={'evalEntry:' + evaluationData.methodId + evaluationData.id + String(columnIndex)}>
-            <input value={evaluationData.responses[column.propertyRef]} onChange={(e) => handleChange(column.propertyRef, e.target.value)}/></td>);
+            <input value={evaluationData.responses[column.propertyRef]} onKeyDown={(e) => {
+              if (event.keyCode === 46 || event.keyCode === 8) {
+                console.log("Delete")
+              }
+            }} onKeyPress={(e) => {
+              handleKeyPress(column.propertyRef, e)
+
+            }}/></td>);
         }
       })}
     </tr>
