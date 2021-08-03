@@ -31,10 +31,10 @@ const Reports = () => {
       {reportDocs &&
         <ul>
           {reportDocs.map(reportDoc => {
-            let encodedReportId = encodeURIComponent(reportDoc.data.id)
+            let reportId = reportDoc.data.id.replace('https://w.rubric.cc/reports/', '');
             return (
               <li key={reportDoc.data.id}>
-                <Link to={`/report/${encodedReportId}`}>{reportDoc.data.id}</Link>
+                <Link to={`/report/${reportId}`}>{reportDoc.data.id}</Link>
               </li>
             )
           })}

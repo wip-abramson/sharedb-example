@@ -20,7 +20,6 @@ export const DbConnectionContext = React.createContext();
 
 function App() {
 
-  let reportId = 'https://w.rubric.cc/reports/1';
 
   let [dbConnection, setDbConnection] = React.useState(null)
 

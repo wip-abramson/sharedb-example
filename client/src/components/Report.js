@@ -20,7 +20,7 @@ const Report = () => {
 
   React.useEffect(() => {
 
-    let reportId = decodeURIComponent(id);
+    let reportId = 'https://w.rubric.cc/reports/' + id;
     // Create local Doc instance mapped to 'examples' collection document with id 'counter'
     let reportDoc = dbConnection.get('reports', reportId);
 
