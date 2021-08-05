@@ -24,7 +24,9 @@ const ReportEvaluation = ({evaluationId, template}) => {
     if (evaluationDoc) {
       // Get initial value of document and subscribe to changes
       evaluationDoc.subscribe(updateEvaluationData);
-
+      evaluationDoc.on('op', (op, source) => {
+        setEvaluationData(evaluationDoc.data)
+      })
     }
   }, [evaluationDoc])
 
@@ -70,7 +72,7 @@ const ReportEvaluation = ({evaluationId, template}) => {
       // debug(evaluationDoc.data)
       // setEvaluationData(evaluationDoc.data)
 
-      setEvaluationData({...evaluationData, "responses": evaluationDoc.data.responses})
+      // setEvaluationData({...evaluationData, "responses": evaluationDoc.data.responses})
 
     });
   }
