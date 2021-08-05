@@ -26,7 +26,7 @@ const ReportEvaluation = ({evaluationId, template}) => {
       evaluationDoc.subscribe(updateEvaluationData);
       evaluationDoc.on('op', (op, source) => {
         console.log("Op listener", op)
-        setEvaluationData(evaluationDoc.data)
+        setEvaluationData({...evaluationData, "responses": evaluationDoc.data.responses})
       })
     }
   }, [evaluationDoc])
