@@ -1,4 +1,3 @@
-import StringBinding from 'sharedb-string-binding'
 import {DbConnectionContext} from "../App";
 import EvaluationMethod from "./EvaluationMethod";
 
