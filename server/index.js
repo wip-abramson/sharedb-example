@@ -32,7 +32,10 @@ debug('DB_PORT: ', DB_PORT);
 
 //debug('report[0]', reports[0]);
 const db = require('sharedb-mongo')(`mongodb://localhost:${DB_PORT}`, {mongoOptions: {useUnifiedTopology: true}});
-const backend = new ShareDB({db});
+const backend = new ShareDB({
+  db: db,
+  pubsub: new ShareDB.MemoryPubSub()
+});
 initialiseDb(startServer);
 
 // Create initial document then fire callback

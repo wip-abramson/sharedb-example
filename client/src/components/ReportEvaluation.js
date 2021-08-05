@@ -25,6 +25,7 @@ const ReportEvaluation = ({evaluationId, template}) => {
       // Get initial value of document and subscribe to changes
       evaluationDoc.subscribe(updateEvaluationData);
       evaluationDoc.on('op', (op, source) => {
+        console.log("Op listener", op)
         setEvaluationData(evaluationDoc.data)
       })
     }
@@ -55,7 +56,6 @@ const ReportEvaluation = ({evaluationId, template}) => {
     } else {
       offset = selectionStart
       delString = currentValue.substring(selectionStart,selectionEnd)
-
     }
 
     let path = ['responses', columnRef, offset]
@@ -148,7 +148,9 @@ const ReportEvaluation = ({evaluationId, template}) => {
           );
         } else {
           return (<td key={'evalEntry:' + evaluationData.methodId + evaluationData.id + String(columnIndex)}>
-            <input value={evaluationData.responses[column.propertyRef]} onKeyDown={(event) => {
+            <input value={evaluationData.responses[column.propertyRef]}
+                   onChange={(event) => console.log(event.target.value)}
+                   onKeyDown={(event) => {
               let charCode = event.which || event.charCode || event.keyCode || 0;
               if (charCode === 46 || charCode === 8) {
                 handleDelete(column.propertyRef, event)
