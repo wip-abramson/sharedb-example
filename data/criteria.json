@@ -443,16 +443,6 @@
         "type": "method"
       },
       {
-        "heading": "Spec.",
-        "type": "enhancedLetter",
-        "propertyRef": "spec"
-      },
-      {
-        "heading": "Net.",
-        "type": "enhancedLetter",
-        "propertyRef": "net"
-      },
-      {
         "heading": "Reg.",
         "type": "enhancedLetter",
         "propertyRef": "reg"
@@ -510,16 +500,6 @@
         "heading": "Method",
         "propertyRef": "method",
         "type": "method"
-      },
-      {
-        "heading": "Spec.",
-        "type": "enhancedLetter",
-        "propertyRef": "spec"
-      },
-      {
-        "heading": "Net.",
-        "type": "enhancedLetter",
-        "propertyRef": "net"
       },
       {
         "heading": "Reg.",
@@ -793,6 +773,83 @@
 },
 {
   "id": "https://w.rubric.cc/criteria/14",
+  "question": "How many DIDs of this method can be created per time period, on a single device using the Method’s best reference implementation? Reference device is Microsoft Azure Standard_D8as_v4 8vCPUs, 32 GiB RAM, and 1024 GiB Disk.",
+  "name": "Transactional Performance - Local Create Bandwidth",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "More than 1,000,000 Transactions Per Second"
+      },
+      {
+        "label": "B",
+        "meaning": "100,001 - 1,000,000 TPS"
+      },
+      {
+        "label": "C",
+        "meaning": "10,001 - 100,000 TPS"
+      },
+      {
+        "label": "D",
+        "meaning": "1,001 - 10,000 TPS"
+      },
+      {
+        "label": "E",
+        "meaning": "101 - 1,000 TPS"
+      },
+      {
+        "label": "F",
+        "meaning": "11 - 100 TPS"
+      },
+      {
+        "label": "G",
+        "meaning": "1-10 TPS"
+      },
+      {
+        "label": "H",
+        "meaning": "Less than 1 TPS"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Spec.",
+        "type": "enhancedLetter",
+        "propertyRef": "spec"
+      },
+      {
+        "heading": "Net.",
+        "type": "enhancedLetter",
+        "propertyRef": "net"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "In high volume or low-processor applications, it is vital to be able to estimate how many resource DID creation requires. In some cases, a single local device can serve an entire enterprise deployment. In other situations, multiple servers may be required to meet demand. This criteria uses a stock Amazon Web Services instance to calibrate computational requirements across different methods.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/1",
+    "sourceSection": "",
+    "sectionRef": ""
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/15",
   "question": "How many DIDs can be updated per unit time?",
   "name": "Transactional Performance -- Update",
   "response": {
@@ -851,7 +908,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/15",
+  "id": "https://w.rubric.cc/criteria/16",
   "question": "How long does it take until updates are authoritatively final?",
   "name": "Update Latency",
   "response": {
@@ -919,7 +976,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/16",
+  "id": "https://w.rubric.cc/criteria/17",
   "question": "Who can retrieve cryptographic proof of the history of changes to a given DID Document?",
   "name": "Auditability",
   "response": {
@@ -970,7 +1027,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/17",
+  "id": "https://w.rubric.cc/criteria/18",
   "question": "How can one prove control over DIDs of the Method?",
   "name": "Proof of Control",
   "response": {
@@ -1041,7 +1098,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/18",
+  "id": "https://w.rubric.cc/criteria/19",
   "question": "How many independent legal entities determine consensus?",
   "name": "Operational Diversity",
   "response": {
@@ -1104,7 +1161,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/19",
+  "id": "https://w.rubric.cc/criteria/20",
   "question": "What type of consensus mechanism is used by the method registry?",
   "name": "Registry Consensus",
   "response": {
@@ -1164,7 +1221,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/20",
+  "id": "https://w.rubric.cc/criteria/21",
   "question": "If the Method is based on a cryptocurrency, did that currency have an Initial Coin Offering or other public funding mechanism?",
   "name": "Public Funding",
   "response": {
@@ -1218,7 +1275,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/21",
+  "id": "https://w.rubric.cc/criteria/22",
   "question": "How long has the organization(s) behind the Method been operational?",
   "name": "Organizational Maturity in Time",
   "response": {
@@ -1287,7 +1344,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/22",
+  "id": "https://w.rubric.cc/criteria/23",
   "question": "How rigorously tested is the proposed consensus implementation?",
   "name": "Test Coverage",
   "response": {
@@ -1347,7 +1404,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/23",
+  "id": "https://w.rubric.cc/criteria/24",
   "question": "Is the registry in general release?",
   "name": "Release Status",
   "response": {
@@ -1403,7 +1460,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/24",
+  "id": "https://w.rubric.cc/criteria/25",
   "question": "How long has the underlying spec/network/registry been available to third parties for non-trivial use?",
   "name": "Maturity",
   "response": {
@@ -1468,7 +1525,58 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/25",
+  "id": "https://w.rubric.cc/criteria/26",
+  "question": "What is the lowest security level (\"bits of security\")[https://en.wikipedia.org/wiki/Security_level] provided by the combination of algorithms and key types that the method requires its implementations to support?",
+  "name": "Robust Crypto",
+  "response": {
+    "type": "multipleChoice",
+    "possibleResponses": [
+      {
+        "label": "A",
+        "meaning": "No combination of required features produces a profile with less than 256 bits of security."
+      },
+      {
+        "label": "B",
+        "meaning": "Between 128 and 256 bits"
+      },
+      {
+        "label": "C",
+        "meaning": "Less than 128 bits"
+      },
+      {
+        "label": "D",
+        "meaning": "Less than 64 bits"
+      }
+    ]
+  },
+  "evaluationTemplate": {
+    "columns": [
+      {
+        "heading": "Method",
+        "propertyRef": "method",
+        "type": "method"
+      },
+      {
+        "heading": "Reg.",
+        "type": "enhancedLetter",
+        "propertyRef": "reg"
+      },
+      {
+        "heading": "Note",
+        "type": "richText",
+        "propertyRef": "note"
+      }
+    ]
+  },
+  "relevance": "A DID method that requires implementations to support something weak (e.g., 1024-bit RSA) is guaranteeing that its users will cooperate by default with encryption that's relatively easy to crack, with hashing that's not adequately collision-resistant, etc.",
+  "source": {
+    "sourceRef": "https://w.rubric.cc/sources/2",
+    "sourceSection": "$2.6.1",
+    "sectionRef": "#robust-crypto"
+  }
+},
+{
+  "id": "https://w.rubric.cc/criteria/27",
   "question": "Does the system use cryptographic and security primitives that are well vetted by technical experts, and battle hardened in the school of experience?",
   "name": "Expert Review (Cryptography)",
   "response": {
@@ -1519,7 +1627,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/26",
+  "id": "https://w.rubric.cc/criteria/28",
   "question": "Has the registry’s consensus mechanism undergone sufficient review?",
   "name": "Expert Review (Consensus)",
   "response": {
@@ -1575,7 +1683,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/27",
+  "id": "https://w.rubric.cc/criteria/29",
   "question": "How friendly is the system to adopting post-quantum crypto, larger hashes, or other measures that upgrade its security?",
   "name": "Future Proofing",
   "response": {
@@ -1626,7 +1734,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/28",
+  "id": "https://w.rubric.cc/criteria/30",
   "question": "How robust are protections against attempts to suppress information flow, whether legal (cease and desist) or technical (denial of service)?",
   "name": "Availability",
   "response": {
@@ -1673,7 +1781,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/29",
+  "id": "https://w.rubric.cc/criteria/31",
   "question": "Is the current state of a DID document provably correct from a history that's visible to anyone who can resolve the DID?",
   "name": "Provenance",
   "response": {
@@ -1724,7 +1832,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/30",
+  "id": "https://w.rubric.cc/criteria/32",
   "question": "Is the code of the method published, does it have many contributors, and does it have a published vulnerability reporting (responsible disclosure) mechanism?",
   "name": "Many Eyes",
   "response": {
@@ -1775,7 +1883,7 @@
   }
 },
 {
-  "id": "https://w.rubric.cc/criteria/31",
+  "id": "https://w.rubric.cc/criteria/33",
   "question": "Is the Method compliant with US Federal requirements for the use of cryptography? ",
   "name": "United States Federal Compliance",
   "response": {

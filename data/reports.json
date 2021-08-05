@@ -38,8 +38,8 @@
         {
           "id": "https://w.rubric.cc/criteria/2",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/3",
+            "https://w.rubric.cc/evaluations/4"
           ]
         }
       ]
@@ -52,64 +52,72 @@
             "id": "https://w.rubric.cc/criteria/3",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/5",
+              "https://w.rubric.cc/evaluations/6"
             ]
 	  },
 	  {
 	    "id": "https://w.rubric.cc/criteria/4",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/7",
+              "https://w.rubric.cc/evaluations/8"
 	    ]
 	  },
 	  {
             "id": "https://w.rubric.cc/criteria/5",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/9",
+              "https://w.rubric.cc/evaluations/10"
             ]
 	  },
 	  {
             "id": "https://w.rubric.cc/criteria/6",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/11",
+              "https://w.rubric.cc/evaluations/12"
             ]
 	  },
 	  {
 	    "id": "https://w.rubric.cc/criteria/7",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/13",
+              "https://w.rubric.cc/evaluations/14"
             ]
 	  },
 	  {
             "id": "https://w.rubric.cc/criteria/8",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/15",
+              "https://w.rubric.cc/evaluations/16"
             ]
 	  },
 	  {
             "id": "https://w.rubric.cc/criteria/9",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/17",
+              "https://w.rubric.cc/evaluations/18"
             ]
 	  },
 	  {
             "id": "https://w.rubric.cc/criteria/10",
             "evaluations": 
 	    [
-              "https://w.rubric.cc/evaluations/1",
-              "https://w.rubric.cc/evaluations/2"
+              "https://w.rubric.cc/evaluations/18",
+              "https://w.rubric.cc/evaluations/19"
+            ]
+	  },
+	  {
+            "id": "https://w.rubric.cc/criteria/11",
+            "evaluations": 
+	    [
+              "https://w.rubric.cc/evaluations/20",
+              "https://w.rubric.cc/evaluations/21"
             ]
 	  }
       ]
@@ -119,43 +127,43 @@
       "desc": "Operation criteria address how the rules are operationalized, ie., how are the rules embodied in a working system.​",
       "criteria": [
         { 
-          "id": "https://w.rubric.cc/criteria/11",
-          "evaluations": 
-	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
-          ]
-	},
-	{
           "id": "https://w.rubric.cc/criteria/12",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/23",
+            "https://w.rubric.cc/evaluations/24"
           ]
 	},
 	{
           "id": "https://w.rubric.cc/criteria/13",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/25",
+            "https://w.rubric.cc/evaluations/26"
           ]
 	},
 	{
           "id": "https://w.rubric.cc/criteria/14",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/27",
+            "https://w.rubric.cc/evaluations/28"
           ]
 	},
 	{
           "id": "https://w.rubric.cc/criteria/15",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/29",
+            "https://w.rubric.cc/evaluations/30"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/16",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/31",
+            "https://w.rubric.cc/evaluations/32"
           ]
 	}
       ]
@@ -165,34 +173,34 @@
       "desc": "These criteria address how rulebreaking is identified and addressed.​",
       "criteria": [
 	{
-          "id": "https://w.rubric.cc/criteria/16",
-          "evaluations": 
-	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
-          ]
-	},
-	{
           "id": "https://w.rubric.cc/criteria/17",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/33",
+            "https://w.rubric.cc/evaluations/34"
           ]
 	},
 	{
           "id": "https://w.rubric.cc/criteria/18",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/35",
+            "https://w.rubric.cc/evaluations/36"
+          ]
+	},
+	{
+          "id": "https://w.rubric.cc/criteria/19",
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/37",
+            "https://w.rubric.cc/evaluations/38"
           ]
         },
         {
-          "id": "https://w.rubric.cc/criteria/19",
+          "id": "https://w.rubric.cc/criteria/20",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/39",
+            "https://w.rubric.cc/evaluations/40"
           ]
         }
       ]
@@ -203,41 +211,41 @@
       "desc": "​Adoption criteria address how widely the method and its implementations are used by various parties and systems.​",
       "criteria": [
 	{
-          "id": "https://w.rubric.cc/criteria/20",
-          "evaluations": 
-	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
-          ]
-	},
-	{
           "id": "https://w.rubric.cc/criteria/21",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/41",
+            "https://w.rubric.cc/evaluations/42"
           ]
 	},
 	{
           "id": "https://w.rubric.cc/criteria/22",
           "evaluations": 
 	  [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/43",
+            "https://w.rubric.cc/evaluations/44"
           ]
-        },
-        {
+	},
+	{
           "id": "https://w.rubric.cc/criteria/23",
-          "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+          "evaluations": 
+	  [
+            "https://w.rubric.cc/evaluations/45",
+            "https://w.rubric.cc/evaluations/46"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/24",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/47",
+            "https://w.rubric.cc/evaluations/48"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/25",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/49",
+            "https://w.rubric.cc/evaluations/50"
           ]
         }
       ]
@@ -248,59 +256,59 @@
       "desc": "​​Security criteria address how the method is cryptographically secured.",
       "criteria": [
         {
-          "id": "https://w.rubric.cc/criteria/24",
-          "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
-          ]
-        },
-        {
-          "id": "https://w.rubric.cc/criteria/25",
-          "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
-          ]
-        },
-        {
           "id": "https://w.rubric.cc/criteria/26",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/51",
+            "https://w.rubric.cc/evaluations/52"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/27",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/53",
+            "https://w.rubric.cc/evaluations/54"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/28",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/55",
+            "https://w.rubric.cc/evaluations/56"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/29",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/57",
+            "https://w.rubric.cc/evaluations/58"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/30",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/59",
+            "https://w.rubric.cc/evaluations/60"
           ]
         },
         {
           "id": "https://w.rubric.cc/criteria/31",
           "evaluations": [
-            "https://w.rubric.cc/evaluations/1",
-            "https://w.rubric.cc/evaluations/2"
+            "https://w.rubric.cc/evaluations/61",
+            "https://w.rubric.cc/evaluations/62"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/32",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/63",
+            "https://w.rubric.cc/evaluations/64"
+          ]
+        },
+        {
+          "id": "https://w.rubric.cc/criteria/33",
+          "evaluations": [
+            "https://w.rubric.cc/evaluations/65",
+            "https://w.rubric.cc/evaluations/66"
           ]
         }
       ]

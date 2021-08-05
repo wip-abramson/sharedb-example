@@ -2,7 +2,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/1",
     "criteriaId": "https://w.rubric.cc/criteria/1",
-    "methodId": "https://w.rubric.cc/methods/1",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
       "spec": "B",
       "net": "B",
@@ -19,7 +19,7 @@
   {
     "id": "https://w.rubric.cc/evaluations/2",
     "criteriaId": "https://w.rubric.cc/criteria/1",
-    "methodId": "https://w.rubric.cc/methods/2",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
       "spec": "A-",
       "net": "A-",
@@ -34,13 +34,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/3",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
-    "methodId": "https://w.rubric.cc/methods/1",
+    "criteriaId": "https://w.rubric.cc/criteria/2",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "D",
+      "net": "D",
+      "reg": "D",
+      "note": "Operations are not yet transferred to the foundation. Neither a schedule of meetings nor minutes from past meetings were available from Foundation’s website."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -50,13 +50,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/4",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
-    "methodId": "https://w.rubric.cc/methods/2",
+    "criteriaId": "https://w.rubric.cc/criteria/2",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A-",
+      "net": "A-",
+      "reg": "A-",
+      "note": "Once the production network is launched, all rule making becomes a matter of public discourse via the Veres One CG. However, decisions about which rules to adopt remain the purview of the Foundation and it is unknown whether or not the Foundation will operate its meetings in as open a fashion as the CG."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -66,12 +66,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/5",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/3",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "net": "A",
+      "reg": "A",
+      "note": "The V1 DID Method operates on its own blockchain with a novel, non-cryptocurrency consensus algorithm."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -81,12 +82,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/6",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/3",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "net": "A",
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -96,12 +98,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/7",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/4",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "B+",
+      "reg": "B+",
+      "note": "The ledger is available to the public for reading, and anyone can submit a transaction (either through paying an accelerator or in-kind contribution), however, only Witnesses are able to approve updates to the chain. The propagation rules of the peer network restrict the ability for Witnesses to selectively approve transactions, but ultimately, the decision remains with a supermajority of Witnesses."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -111,12 +113,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/8",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/4",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "B+",
+      "reg": "B+",
+      "note": "Same as did:v1.testnet"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -126,12 +128,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/9",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/5",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "A",
+      "reg": "A",
+      "note": "Veres One uses 100% W3C conformant representations, without regard to which wallet implementation is used."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -141,12 +143,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/10",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/5",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "A",
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -156,12 +158,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/11",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/6",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "A",
+      "reg": "A",
+      "note": "Veres One DIDs are globally resolvable, without restriction, regardless of context."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -171,12 +173,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/12",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/6",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "A",
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -186,12 +188,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/13",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/7",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "Veres One DID creation is a local cryptographic process. There is no network or registry involved."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -201,12 +204,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/14",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/7",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "Same as did:v1.testnet"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -216,12 +220,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/15",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/8",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "Veres One can handle ~750 million updates per quarter at the current architecture of 13 witnesses running stock amazon instances. Performance can be improved through a variety of approaches with different cost and engineering tradeoffs."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -231,12 +234,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/16",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/8",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "Same as did:v1.testnet"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -246,12 +248,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/17",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/9",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "A",
+      "note": "Creation is FREE"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -261,12 +262,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/18",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/9",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "A",
+      "note": "Same as did:v1.test.net"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -276,12 +276,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/19",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/10",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "n/a",
+      "note": "Veres One Test Net does not have pricing."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -291,12 +290,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/20",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/10",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "D",
+      "note": "Veres One updates target a retail cost of ~$0.25, which will be set based on operational costs of the Veres Foundation, for wholesale pricing. Accelerators may mark up these prices based on their business model and approach. The estimates for these costs is currently under evaluation. Prices will also vary based on the size of the update, with larger updates costing more.\n\nThe costs and in-kind requirements will be managed by the Foundation based on market dynamics."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -306,12 +304,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/21",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/11",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "n/a",
+      "note": "Veres One Testnet does not have pricing."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -321,12 +318,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/22",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/11",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "B",
+      "note": "The Foundation-established cost can be earned by in-kind contributions, allowing hosted participants to post transactions without out-of-pocket expense. The amortized cost of this is expected to be less than “retail” but remain subject to several variables. For this evaluation, we estimate the in-kind costs for Veres One can be reduced to less than $0.01 per update, but ultimately this will be subject both to the Foundation’s in-kind rules as well as the marginal cost of satisfying those rules."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -335,28 +331,13 @@
     "proof": null
   },
   {
-    "id": "https://w.rubric.cc/evaluations/22",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "id": "https://w.rubric.cc/evaluations/23",
+    "criteriaId": "https://w.rubric.cc/criteria/12",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
-    },
-    "evaluator": [
-      "https://w.rubric.cc/evaluators/1",
-      "https://w.rubric.cc/evaluators/2"
-    ],
-    "proof": null
-  },
-  {
-    "id": "https://w.rubric.cc/evaluations/22",
-    "criteriaId": "https://w.rubric.cc/criteria/22",
-    "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "D",
+      "reg": "D",
+      "note": "Pre-production operation is essentially in-house at Digital Bazaar."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -366,12 +347,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/24",
-    "criteriaId": "https://w.rubric.cc/criteria/24",
+    "criteriaId": "https://w.rubric.cc/criteria/12",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "B",
+      "reg": "B",
+      "note": "Once operations are transferred to the Foundation, finances should be considerably more transparent."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -381,12 +362,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/25",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/13",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "n/a",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "Veres One DID creation is a local cryptographic process. There is no network or registry involved."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -396,12 +378,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/26",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/13",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "n/a",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -411,12 +394,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/27",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/14",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "D",
+      "net": "D",
+      "reg": "D",
+      "note": "2,850 DID Creations/sec"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -426,12 +410,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/28",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/14",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "D",
+      "net": "D",
+      "reg": "D",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -441,12 +426,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/29",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/15",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "Updates on Veres One have been demonstrated at >100 TPS. This could go considerably higher with various technical trade-offs."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -456,12 +440,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/30",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/15",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -471,12 +454,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/31",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/16",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "B",
+      "reg": "B",
+      "note": "Provable Finality for Veres One updates ranged from 1 to 60 seconds in testing (1-3 seconds in a single data center)"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -486,12 +469,12 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/32",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/16",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "net": "B",
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -501,12 +484,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/33",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/17",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "A",
+      "note": "The Veres One ledger is publicly verifiable."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -516,12 +498,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/34",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/17",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -531,12 +512,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/35",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/18",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "note": "Veres One requires a signed challenge string, using private key material associated with the DID."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -546,12 +526,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/36",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/18",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -561,12 +540,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/37",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/19",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "F",
+      "note": "Veres One is designed for 13 Witnesses; only Witnesses are able to approve updates to the chain. The propagation rules of the peer network."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -576,12 +554,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/38",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/19",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "F",
+      "note": "No change between did:v1.testnet and did:v1.production restrict the ability for Witnesses to selectively approve transactions, but ultimately, the decision remains with a supermajority of Witnesses."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -591,12 +568,11 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/39",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/20",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "There Veres One registry consensus algorithm uses a BFT algorithm which formulates consensus through a super majority of witness nodes with any number of peer nodes allowed to participate in the gossip network."
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -606,12 +582,27 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/40",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/20",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "reg": "C",
+      "note": "There Veres One registry consensus algorithm uses a BFT algorithm which formulates consensus through a super majority of 13 witness nodes with any number of peer nodes allowed to participate in the gossip network."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/41",
+    "criteriaId": "https://w.rubric.cc/criteria/21",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "spec": "n/a",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "did:v1 is not based on any cryptocurrency"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -621,12 +612,13 @@
   },
   {
     "id": "https://w.rubric.cc/evaluations/42",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "criteriaId": "https://w.rubric.cc/criteria/21",
+    "method": "https://w.rubric.cc/methods/2",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "n/a",
+      "net": "n/a",
+      "reg": "n/a",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
@@ -635,13 +627,352 @@
     "proof": null
   },
   {
-    "id": "https://w.rubric.cc/evaluations/#",
-    "criteriaId": "https://w.rubric.cc/criteria/#",
+    "id": "https://w.rubric.cc/evaluations/43",
+    "criteriaId": "https://w.rubric.cc/criteria/22",
+    "method": "https://w.rubric.cc/methods/1",
     "responses": {
-      "spec": "",
-      "net": "",
-      "reg": "",
-      "note": ""
+      "spec": "B",
+      "net": "D",
+      "reg": "D",
+      "note": "Digital Bazaar, the team behind the spec has been in business for over 17 years. The Veres One Foundation was founded in 2019."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/44",
+    "criteriaId": "https://w.rubric.cc/criteria/22",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "spec": "B",
+      "net": "D",
+      "reg": "D",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/45",
+    "criteriaId": "https://w.rubric.cc/criteria/23",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "The Veres One Software contains nightly test suites, simulation suites, and other continuously running correctness tests implemented as code to ensure that the implementation is aligned with the mathematical proof of correctness."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/46",
+    "criteriaId": "https://w.rubric.cc/criteria/23",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/47",
+    "criteriaId": "https://w.rubric.cc/criteria/24",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "The Veres One test network has been operational for over 3 years, in three major release iterations. It is not yet in production."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/48",
+    "criteriaId": "https://w.rubric.cc/criteria/24",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/49",
+    "criteriaId": "https://w.rubric.cc/criteria/25",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "spec": "C",
+      "net": "C",
+      "reg": "C",
+      "note": "The Veres One test network has been operational for over 3 years, in three major release iterations."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/50",
+    "criteriaId": "https://w.rubric.cc/criteria/25",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "spec": "C",
+      "net": "E",
+      "reg": "E",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/51",
+    "criteriaId": "https://w.rubric.cc/criteria/26",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "A",
+      "note": "Veres One uses the Ed25519 public key cryptography scheme(256-bit) to perform all digital signatures. It also uses the SHA-256 hashing algorithm with 256-bits of output to perform all hashing operations performed by the blockchain."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/52",
+    "criteriaId": "https://w.rubric.cc/criteria/26",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/53",
+    "criteriaId": "https://w.rubric.cc/criteria/27",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "A",
+      "note": "Ed25519 and SHA256 are highly regarded cryptographic algorithms"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/54",
+    "criteriaId": "https://w.rubric.cc/criteria/27",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/55",
+    "criteriaId": "https://w.rubric.cc/criteria/28",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "Mathematical proofs have been peer reviewed for publication in a not-yet-published book on consensus algorithms and as a special IEEE journal publication on network consensus algorithms."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/56",
+    "criteriaId": "https://w.rubric.cc/criteria/28",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "net": "B",
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/57",
+    "criteriaId": "https://w.rubric.cc/criteria/29",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "D",
+      "note": "The Veres One network does not provide for adjustable or modular cryptography. Changes must be made through API updates propagating via manual updates to the software running the network."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/58",
+    "criteriaId": "https://w.rubric.cc/criteria/29",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "D",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/59",
+    "criteriaId": "https://w.rubric.cc/criteria/30",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "B",
+      "note": "Veres One is operated by known parties; if all such parties are attacked, especially via legal means, the network could be shut down or additional rules applied. However, no single party can deny the consensus process. Like any publicly accessible service, Veres One is subject to distributed denial of service attacks. Counter measures are in place, but cannot be 100% ameliorated."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/60",
+    "criteriaId": "https://w.rubric.cc/criteria/30",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/61",
+    "criteriaId": "https://w.rubric.cc/criteria/31",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "A",
+      "note": "All document updates are recorded in a non-repudiable manner on the Veres One Ledger."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/62",
+    "criteriaId": "https://w.rubric.cc/criteria/31",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/63",
+    "criteriaId": "https://w.rubric.cc/criteria/32",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "reg": "B",
+      "note": "There is a reference implementation available, created and maintained by Digital Bazaar with limited contributions from the public."
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/64",
+    "criteriaId": "https://w.rubric.cc/criteria/32",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "reg": "B",
+      "note": "No change between did:v1.testnet and did:v1.production"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/65",
+    "criteriaId": "https://w.rubric.cc/criteria/33",
+    "method": "https://w.rubric.cc/methods/1",
+    "responses": {
+      "spec": "A",
+      "net": "A",
+      "reg": "A",
+      "note": "did:v1 was written to be compatible with all NIST requirements, including those specified in the Relevance section (6.8.3)"
+    },
+    "evaluator": [
+      "https://w.rubric.cc/evaluators/1",
+      "https://w.rubric.cc/evaluators/2"
+    ],
+    "proof": null
+  },
+  {
+    "id": "https://w.rubric.cc/evaluations/66",
+    "criteriaId": "https://w.rubric.cc/criteria/33",
+    "method": "https://w.rubric.cc/methods/2",
+    "responses": {
+      "spec": "A",
+      "net": "A",
+      "reg": "A",
+      "note": "No change between did:v1.testnet and did:v1.production"
     },
     "evaluator": [
       "https://w.rubric.cc/evaluators/1",
