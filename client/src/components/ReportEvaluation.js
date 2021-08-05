@@ -30,7 +30,7 @@ const ReportEvaluation = ({evaluationId, template}) => {
 
   function updateEvaluationData() {
     debug("Evaluations Data", evaluationDoc.data)
-    setEvaluationData(evaluationData)
+    setEvaluationData(evaluationDoc.data)
   }
 
   function handleDelete(columnRef, event) {

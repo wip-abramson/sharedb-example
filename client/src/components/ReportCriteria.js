@@ -83,6 +83,7 @@ const ReportCriteria = ({criteriaId, evaluations}) => {
           </tr>
           {evaluations &&
           evaluations.map((evaluationId) => {
+            console.log("Render", evaluationId)
             return (
               <ReportEvaluation key={'reportEvaluation.' + evaluationId} evaluationId={evaluationId}
                                 template={criteriaData.evaluationTemplate.columns}>
