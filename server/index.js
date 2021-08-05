@@ -85,6 +85,14 @@ function startServer() {
     backend.listen(stream);
   });
 
+  app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, "..", 'client/build/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
+
   server.listen(PORT);
   console.log('Listening on http://localhost:' + PORT);
 }
