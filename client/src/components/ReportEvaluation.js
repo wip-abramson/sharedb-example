@@ -1,6 +1,6 @@
 import {DbConnectionContext} from "../App";
 import EvaluationMethod from "./EvaluationMethod";
-import ShareDbTextBoundInput from "./ShareDbHelpers/ShareDbTextBoundInput";
+import ShareDbTextBoundInput from "./sharedb-helpers/ShareDbTextBoundInput";
 
 const React = require('react');
 // const FakeDb = require('../fakedb');
