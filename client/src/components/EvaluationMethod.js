@@ -1,6 +1,5 @@
 import React from 'react'
 import {DbConnectionContext} from "../App";
-const Debug = require('debug');
 const debug = require('debug')('EvaluationMethod');
 
 const EvaluationMethod = ({methodId}) => {

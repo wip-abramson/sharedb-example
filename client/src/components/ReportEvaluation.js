@@ -1,10 +1,8 @@
+import React from 'react'
 import {DbConnectionContext} from "../App";
 import EvaluationMethod from "./EvaluationMethod";
 import ShareDbTextBoundInput from "./sharedb-helpers/ShareDbTextBoundInput";
 
-const React = require('react');
-// const FakeDb = require('../fakedb');
-const Debug = require('debug');
 const debug = require('debug')('ReportEvaluation');
 const ReportEvaluation = ({evaluationId, template}) => {
   debug(evaluationId, template);

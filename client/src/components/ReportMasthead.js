@@ -1,7 +1,6 @@
 import React from 'react'
 import ReportEvaluators from './ReportEvaluators.js';
 import ReportUseCases from './ReportUseCases.js';
-//const FakeDb = require('fakedb.js');
 import ReportMethod from './ReportMethod';
 import ReportSource from './ReportSource';
 

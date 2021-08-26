@@ -1,6 +1,5 @@
-
+import React from 'react'
 import ReportEvaluator from './ReportEvaluator';
-const React = require('react');
 
 const ReportEvaluators = ({ evaluators }) => {
   var s = "";

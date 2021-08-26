@@ -1,11 +1,9 @@
-import ShareDb from 'sharedb-client'
+import React from 'react'
 import {DbConnectionContext} from "../App";
-const React = require('react');
 const Debug = require('debug');
 const debug = Debug('reportMethod');
 
-// const FakeDb = require('../fakedb');
-//var Criteria = require("criteria.js");
+
 const ReportMethod = ({ methodId, index }) => {
   // TODO: Can we remove index and use methodId in keys?
   debug("Report Method", methodId)

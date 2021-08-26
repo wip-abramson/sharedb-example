@@ -1,10 +1,7 @@
 import React from 'react'
 import ReportMasthead from './ReportMasthead'
-//var ReportMasthead = require('./reportMasthead');
 import ReportCategories from './ReportCategories';
-import ReconnectingWebSocket from "reconnecting-websocket";
 import {DbConnectionContext} from "../App";
-//var Criteria = require("criteria.js");
 import {useParams} from 'react-router-dom'
 
 const Debug = require('debug');

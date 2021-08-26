@@ -1,10 +1,8 @@
-import ShareDb from 'sharedb-client'
+import React from 'react'
 import ReportEvaluation from './ReportEvaluation'
 import {DbConnectionContext} from '../App'
 
-const React = require('react');
 
-// const FakeDb = require('../fakedb');
 const Debug = require('debug');
 const debug = Debug('ReportCriteria');
 
