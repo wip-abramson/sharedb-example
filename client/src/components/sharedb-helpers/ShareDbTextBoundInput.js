@@ -67,13 +67,9 @@ const ShareDbTextBoundInput = ({inputValue, shareDbDocument, documentPath}) => {
       insertOperation(event.target.selectionStart, char)
 
     } else {
-
       let delString = inputValue.substring(selectionStart, selectionEnd)
-      // let documentPath = ['responses', columnRef, selectionStart]
       deleteOperation(selectionStart, delString)
-
       insertOperation(selectionStart, char)
-
     }
 
   }
